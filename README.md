@@ -1,4 +1,4 @@
-# Manifest for GloDroid (Currently WIP, please use https://github.com/android2orangepi-dev/android_allwinner_manifest instead)
+# Manifest for GloDroid
 
 Free and opensource AOSP based Android for the world's most accessible development platforms.  
 

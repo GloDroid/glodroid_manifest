@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remove-project name="platform/external/drm_hwcomposer" />
+  <remove-project name="platform/external/mesa3d" />
+  <extend-project name="platform/external/u-boot" revision="aa0b76d260de99957a0cb10ebf85276e8e084539" />
+  <remove-project name="platform/frameworks/opt/telephony" />
+  <extend-project name="platform/packages/apps/TV" revision="3399fc08dec05bdaf6a9f3898951c290a4e724dc" />
+
+</manifest>
