@@ -16,9 +16,9 @@
   <project path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-aarch64-linux-gnu"
                                            remote="glodroid" name="linaro_gcc_prebuilts.git" revision="refs/tags/gcc-linaro-7.4.1-2019.02-x86_64_aarch64-linux-gnu" />
 
-  <project path="external/drm_hwcomposer" remote="gitlab" name="drm-hwcomposer/drm-hwcomposer.git" revision="d07c370592056ac25e1d5c666ba3845df8165dad" />
+  <project path="external/drm_hwcomposer" remote="gitlab" name="drm-hwcomposer/drm-hwcomposer.git" revision="b2f2baeb9db0d0f4cbc0cac3184058d3fce85ea6" />
   <project path="external/gbm_gralloc"    remote="github" name="robherring/gbm_gralloc.git" revision="db36c0033e29d0bb98553f790c397f89dcd1d1e2" />
-  <project path="external/tinyhal"        remote="github" name="CirrusLogic/tinyhal.git"    revision="3c3e49e2383004b9115216048320f9648db3b360" />
+  <project path="external/tinyhal"        remote="github" name="CirrusLogic/tinyhal.git"    revision="8583031e7968202c82bc8f252e73e2a1dcb4a049" />
   <project path="kernel/glodroid-modules/rtl8189ES_linux" remote="github" name="jwrdegoede/rtl8189ES_linux.git" revision="54bd6808e38f213126e7d6447ae9d80c656179f3" />
 
 </manifest>
