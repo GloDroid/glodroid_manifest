@@ -2,7 +2,7 @@
 
 Free and opensource AOSP based Android for the world's most accessible development platforms.  
 
-This version is based on [Android 10.0.0 Release 14](https://android.googlesource.com/platform/manifest/+/refs/heads/android-10.0.0_r14).  
+This version is based on [Android 10.0.0 Release 25](https://android.googlesource.com/platform/manifest/+/refs/heads/android-10.0.0_r25).  
 
 ## You should install additional packages in order to build GloDroid under Ubuntu
 - [Google's required packages](https://source.android.com/setup/build/initializing).
