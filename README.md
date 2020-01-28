@@ -25,7 +25,7 @@ repo sync -cq
 ```bash
 cd GloDroid
 source ./build/envsetup.sh
-lunch opi_plus2e-userdebug
+lunch orangepi_plus2e-userdebug
 make sdcard
 ```
   
