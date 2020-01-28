@@ -9,7 +9,7 @@ This version is based on [Android 10.0.0 Release 14](https://android.googlesourc
 - Additional packages:
   
 ```bash
-sudo apt-get install swig lz4 repo python-dev python3-dev libssl-dev flex bison
+sudo apt-get install swig liblz4-tool repo python-dev python3-dev libssl-dev flex bison
 pip install Mako
 ```
   
