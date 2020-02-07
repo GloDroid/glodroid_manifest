@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remove-project name="platform/external/drm_hwcomposer" />
+  <extend-project name="platform/external/drm_hwcomposer" revision="acc1c21fadaee888325319d2c8dd2a0995aa2a95"/>
   <remove-project name="platform/external/mesa3d" />
   <extend-project name="platform/external/u-boot" revision="8a6ffeda97dfda5263ef40e1a4efb25b032ce04c" />
   <remove-project name="platform/frameworks/opt/telephony" />
