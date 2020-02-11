@@ -11,6 +11,7 @@
   <project path="external/mesa3d"          remote="glodroid" name="glodroid_forks.git" revision="mesa3d-next" />
   <project path="frameworks/opt/telephony" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/fw_opt_telephony-v1" />
   <project path="kernel/glodroid"          remote="glodroid" name="glodroid_forks.git" revision="kernel-next" />
+  <project path="kernel/glodroid-modules/rtl8189ES_linux" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/rtl8189fs-v1" />
   <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro_arm-linux-gnueabihf"
                                            remote="glodroid" name="linaro_gcc_prebuilts.git" revision="refs/tags/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabihf" />
   <project path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-aarch64-linux-gnu"
@@ -18,6 +19,5 @@
 
   <project path="external/gbm_gralloc"    remote="github" name="robherring/gbm_gralloc.git" revision="db36c0033e29d0bb98553f790c397f89dcd1d1e2" />
   <project path="external/tinyhal"        remote="github" name="CirrusLogic/tinyhal.git"    revision="8583031e7968202c82bc8f252e73e2a1dcb4a049" />
-  <project path="kernel/glodroid-modules/rtl8189ES_linux" remote="github" name="jwrdegoede/rtl8189ES_linux.git" revision="54bd6808e38f213126e7d6447ae9d80c656179f3" />
 
 </manifest>
