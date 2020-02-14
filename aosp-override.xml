@@ -4,7 +4,6 @@
   <extend-project name="platform/external/drm_hwcomposer" revision="acc1c21fadaee888325319d2c8dd2a0995aa2a95"/>
   <remove-project name="platform/external/mesa3d" />
   <extend-project name="platform/external/u-boot" revision="8a6ffeda97dfda5263ef40e1a4efb25b032ce04c" />
-  <remove-project name="platform/frameworks/opt/telephony" />
   <extend-project name="platform/packages/apps/TV" revision="3399fc08dec05bdaf6a9f3898951c290a4e724dc" />
 
 </manifest>
