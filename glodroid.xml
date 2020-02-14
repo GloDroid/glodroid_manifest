@@ -5,11 +5,11 @@
   <remote  name="gitlab"   fetch="https://gitlab.freedesktop.org/" />
   <remote  name="glodroid" fetch="https://github.com/glodroid/" />
 
-  <project path="device/glodroid"        remote="glodroid" name="glodroid_device.git"        revision="next" />
+  <project path="device/glodroid"        remote="glodroid" name="glodroid_device.git"        revision="refs/tags/v0.1.0" />
   <project path="prebuilts/applications" remote="glodroid" name="glodroid_external_apks.git" revision="refs/tags/apps-v1" />
 
-  <project path="external/mesa3d"          remote="glodroid" name="glodroid_forks.git" revision="mesa3d-next" />
-  <project path="kernel/glodroid"          remote="glodroid" name="glodroid_forks.git" revision="kernel-next" />
+  <project path="external/mesa3d"          remote="glodroid" name="glodroid_forks.git" revision="refs/tags/mesa3d-v2" />
+  <project path="kernel/glodroid"          remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-v2" />
   <project path="kernel/glodroid-modules/rtl8189ES_linux" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/rtl8189fs-v1" />
   <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro_arm-linux-gnueabihf"
                                            remote="glodroid" name="linaro_gcc_prebuilts.git" revision="refs/tags/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabihf" />
