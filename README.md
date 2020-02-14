@@ -40,7 +40,7 @@ Use dd or any other utility to write it to the sdcard:
 ```bash
 cd ${ANDROID_ROOT}/
 export card=/dev/sdX
-dd if=out/target/product/plus2e/sdcard.img of=${card} bs=4k
+dd if=out/target/product/plus2e/sdcard.img of=${card} bs=4k count=300000
 sync
 ```
   
