@@ -19,4 +19,6 @@
   <project path="external/gbm_gralloc"    remote="github" name="robherring/gbm_gralloc.git" revision="db36c0033e29d0bb98553f790c397f89dcd1d1e2" />
   <project path="external/tinyhal"        remote="github" name="CirrusLogic/tinyhal.git"    revision="8583031e7968202c82bc8f252e73e2a1dcb4a049" />
 
+  <project path="external/arm-trusted-firmware" remote="aosp" name="platform/external/arm-trusted-firmware" revision="a04808c16cfc126d9fe572ae7c4b5a3d39de5796" />
+
 </manifest>
