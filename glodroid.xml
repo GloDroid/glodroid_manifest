@@ -16,7 +16,7 @@
   <project path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-aarch64-linux-gnu"
                                            remote="glodroid" name="linaro_gcc_prebuilts.git" revision="refs/tags/gcc-linaro-7.4.1-2019.02-x86_64_aarch64-linux-gnu" />
 
-  <project path="external/gbm_gralloc"    remote="github" name="robherring/gbm_gralloc.git" revision="db36c0033e29d0bb98553f790c397f89dcd1d1e2" />
+  <project path="external/gbm_gralloc"    remote="github" name="robherring/gbm_gralloc.git" revision="709726cad68d89f468e8bbf359ac004ed28d842f" />
   <project path="external/tinyhal"        remote="github" name="CirrusLogic/tinyhal.git"    revision="8583031e7968202c82bc8f252e73e2a1dcb4a049" />
 
   <project path="external/arm-trusted-firmware" remote="aosp" name="platform/external/arm-trusted-firmware" revision="a04808c16cfc126d9fe572ae7c4b5a3d39de5796" />
