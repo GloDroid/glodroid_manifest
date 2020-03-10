@@ -10,7 +10,7 @@
 
   <project path="external/mesa3d"          remote="glodroid" name="glodroid_forks.git" revision="mesa3d-next" />
   <project path="kernel/glodroid"          remote="glodroid" name="glodroid_forks.git" revision="kernel-next" />
-  <project path="kernel/glodroid-modules/rtl8189ES_linux" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/rtl8189fs-v1" />
+  <project path="kernel/glodroid-modules/rtl8189ES_linux" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/rtl8189fs-v2" />
   <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro-arm-linux-gnueabihf"
                                            remote="glodroid" name="linaro_gcc_prebuilts.git" revision="refs/tags/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabihf" />
   <project path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-aarch64-linux-gnu"
