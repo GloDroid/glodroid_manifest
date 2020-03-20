@@ -10,7 +10,7 @@ This version is based on [Android 10.0.0 Release 32](https://android.googlesourc
   
 ```bash
 sudo apt-get install swig repo python-dev python3-dev libssl-dev flex bison
-pip install Mako
+sudo pip install Mako
 ```
   
 ## Fetching Android sources
@@ -40,8 +40,8 @@ Use dd or any other utility to write it to the sdcard:
 ```bash
 cd ${ANDROID_ROOT}/
 export card=/dev/sdX
-dd if=out/target/product/plus2e/sdcard.img of=${card} bs=4k count=300000
+dd if=out/target/product/plus2e/sdcard.img of=${card} bs=4k count=330000
 sync
 ```
   
-After sync command compleated you can safely extract your sdcard from the computer.
+After sync command completed you can safely extract your sdcard from the computer.
