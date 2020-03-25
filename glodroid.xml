@@ -8,6 +8,7 @@
   <project path="device/glodroid"        remote="glodroid" name="glodroid_device.git"        revision="next" />
   <project path="prebuilts/applications" remote="glodroid" name="glodroid_external_apks.git" revision="refs/tags/apps-v1" />
 
+  <project path="external/iio-sensors-hal" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/iio-sensors-hal-v1" />
   <project path="external/mesa3d"          remote="glodroid" name="glodroid_forks.git" revision="mesa3d-next" />
   <project path="kernel/glodroid"          remote="glodroid" name="glodroid_forks.git" revision="kernel-next" />
   <project path="kernel/glodroid-modules/rtl8189ES_linux" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/rtl8189fs-v2" />
