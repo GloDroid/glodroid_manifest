@@ -17,7 +17,7 @@ This version is based on [Android 10.0.0 Release 32](https://android.googlesourc
 - Additional packages:
   
 ```bash
-sudo apt-get install swig repo python-dev python3-dev libssl-dev flex bison
+sudo apt-get install swig repo python-dev python3-dev libssl-dev flex bison device-tree-compiler
 sudo pip install Mako
 ```
   
