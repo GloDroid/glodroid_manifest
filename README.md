@@ -35,35 +35,35 @@ cd GloDroid
 source ./build/envsetup.sh
 lunch
 # After that you have to select your device from the list
-make sdcard
+make images
 ```
   
-## Deploying GloDroid to SDCard
+## Deploying GloDroid
 
-After successful build you should see sdcard.img in product output folder: 
-(out/target/product/<product>/sdcard.img)
+After successful build you should see **images.tar.gz** in product output folder: 
+(*out/target/product/<name\>/images.tar.gz*)  
   
-Use dd or any other utility to write it to the sdcard:  
-(Using dd utility is risky, make sure you are not using your local hard drive device as output)
+### Content of archive:
+* Utilities: **adb**, **fastboot**. **mke2fs**  
+* Partition images: **bootloader-sd.img**, **bootloader-emmc.img**, **env.img**, **boot.img**, **boot_dtbo.img**, **super.img**  
+* Recovery GPT image: **deploy-gpt.img**  
+* Recovery sdcard images: **deploy-sd.img**, **deploy-sd-for-emmc.img**  
+* Scripts: **flash-sd.sh**, **flash-emmc.sh**  
   
-```bash
-cd ${ANDROID_ROOT}/
-export card=/dev/sdX
-dd if=out/target/product/<your device folder>/sdcard.img of=${card} bs=4k count=330000
-sync
-```
+### Step 1
+Using any available iso-to-usb utility prepare recovery SDCARD.  
+In case you want to flash Android on sdcard, use *deploy-sd.img*  
+In case you want to flash Android on eMMC, use *deploy-sd-for.emmc.img*  
   
-After sync command completed you can safely extract your sdcard from the computer.
-
-## Updating using fastbootd
+### Step 2
+Insert recovery sdcard into the target board.  
+Connect microusb cable to OTG connector and your PC.  
+Power-up the board.  
   
-In case you already have working Android on your device and you want to update it with some  
-modifications, you can do it without having to remove sdcard.  
+### Step 3
+Run .*/flash-sd.sh* utility for flashing Android to sdcard or *./flash-emmc.sh* for flashing Android to eMMC  
   
-1. Connect your board to PC using micro-usb cable.  
-2. Run your board  
-3. Execute ` adb reboot fastboot` command from PC shell. After that board will reboot into fastbootd mode.  
-4. Change directory to `out/target/product/<your device folder>/`  
-5. Run script `./flash-all.sh`  
-
-You may also want to flash only particular partition to save deploy time. To do that - copy and modify flash-all.sh.  
+*After several minutes flashing should complete and Android should boot*  
+  
+#### NOTE: Monitor has to be connected to the board and powered-up during flashing!
+  
