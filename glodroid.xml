@@ -23,6 +23,6 @@
   <project path="external/tinyhal"        remote="github" name="CirrusLogic/tinyhal.git"    revision="8583031e7968202c82bc8f252e73e2a1dcb4a049" />
   <project path="kernel/firmware"         remote="github" name="armbian/firmware.git"       revision="88dd75506f11edd6b0d56d68d3b62cb7987aced8" />
 
-  <project path="external/arm-trusted-firmware" remote="aosp" name="platform/external/arm-trusted-firmware" revision="a04808c16cfc126d9fe572ae7c4b5a3d39de5796" />
+  <project path="external/arm-trusted-firmware" remote="aosp" name="platform/external/arm-trusted-firmware" revision="de9d0d7c7ffc592e34f9c8c38c1971556d4d4de8" />
 
 </manifest>
