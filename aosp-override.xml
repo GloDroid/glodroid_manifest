@@ -5,5 +5,6 @@
   <remove-project name="platform/external/mesa3d" />
   <remove-project name="platform/external/u-boot" />
   <extend-project name="platform/packages/apps/TV" revision="3399fc08dec05bdaf6a9f3898951c290a4e724dc" />
+  <extend-project name="platform/bootable/recovery" revision="5cdfaafec504c1cae231afe6af80ee5f8803a5f7" />
 
 </manifest>
