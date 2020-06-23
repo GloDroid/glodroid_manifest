@@ -5,12 +5,18 @@ Free and opensource AOSP based Android for the world's most accessible developme
 This version is based on [Android 10.0.0 Release 39](https://android.googlesource.com/platform/manifest/+/refs/heads/android-10.0.0_r39).  
 
 ## Supported devices:
+### SUNXI platform:
+- Orange PI Plus 2 (Tested by community)
 - Orange PI Plus 2E
+- Orange PI Prime (Tested by community)
 - Orange PI PC
+- Orange PI PC 2 (not tested)
 - Orange PI 3
 - Pinephone
 - Pinetab
 - Orange PI WIN (not tested)
+### Broadcom platform:
+- Raspberry PI 4b
 
 ## You should install additional packages in order to build GloDroid under Ubuntu
 - [Google's required packages](https://source.android.com/setup/build/initializing).
