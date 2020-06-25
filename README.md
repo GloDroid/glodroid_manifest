@@ -67,6 +67,7 @@ Connect microusb cable to OTG connector and your PC.
 Power-up the board.  
   
 ### Step 3
+Ensure you have installed adb package: ```$ sudo apt install adb``` (required to setup udev rules)  
 Run .*/flash-sd.sh* utility for flashing Android to sdcard or *./flash-emmc.sh* for flashing Android to eMMC  
   
 *After several minutes flashing should complete and Android should boot*  
