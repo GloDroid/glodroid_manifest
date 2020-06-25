@@ -9,6 +9,7 @@
   <project path="prebuilts/applications" remote="glodroid" name="glodroid_external_apks.git" revision="refs/tags/apps-v1" />
 
   <project path="external/iio-sensors-hal" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/iio-sensors-hal-v1" />
+  <project path="external/gbm_gralloc"     remote="glodroid" name="glodroid_forks.git" revision="refs/tags/gbm_gralloc-v1" />
   <project path="external/mesa3d"          remote="glodroid" name="glodroid_forks.git" revision="mesa3d-next" />
   <project path="external/u-boot"          remote="glodroid" name="glodroid_forks.git" revision="uboot-next" />
   <project path="kernel/glodroid-sunxi"    remote="glodroid" name="glodroid_forks.git" revision="kernel-sunxi-next" />
@@ -21,7 +22,6 @@
   <project path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-aarch64-linux-gnu"
                                            remote="glodroid" name="linaro_gcc_prebuilts.git" revision="refs/tags/gcc-linaro-7.4.1-2019.02-x86_64_aarch64-linux-gnu" />
 
-  <project path="external/gbm_gralloc"    remote="github" name="robherring/gbm_gralloc.git" revision="709726cad68d89f468e8bbf359ac004ed28d842f" />
   <project path="external/tinyhal"        remote="github" name="CirrusLogic/tinyhal.git"    revision="8583031e7968202c82bc8f252e73e2a1dcb4a049" />
   <project path="kernel/firmware"         remote="github" name="armbian/firmware.git"       revision="88dd75506f11edd6b0d56d68d3b62cb7987aced8" clone-depth="1" />
   <project path="vendor/raspberry/firmware" remote="github" name="raspberrypi/firmware.git" revision="a6c9b6b48ce86ef2527586a50760d52f1b33f642" clone-depth="1" />
