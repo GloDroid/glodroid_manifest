@@ -10,13 +10,13 @@
   <remove-project name="platform/external/mesa3d" />
   <remove-project name="platform/external/u-boot" />
 
-  <project path="device/glodroid"        remote="glodroid" name="glodroid_device.git"        revision="refs/tags/v0.3.0" />
+  <project path="device/glodroid"        remote="glodroid" name="glodroid_device.git"        revision="refs/heads/next" />
   <project path="prebuilts/applications" remote="glodroid" name="glodroid_external_apks.git" revision="refs/tags/apps-v1" />
 
   <project path="external/iio-sensors-hal" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/iio-sensors-hal-v1" />
   <project path="external/gbm_gralloc"     remote="glodroid" name="glodroid_forks.git" revision="refs/tags/gbm_gralloc-v1" />
-  <project path="external/mesa3d"          remote="glodroid" name="glodroid_forks.git" revision="refs/tags/mesa3d-v4" />
-  <project path="external/u-boot"          remote="glodroid" name="glodroid_forks.git" revision="refs/tags/uboot-v2" />
+  <project path="external/mesa3d"          remote="glodroid" name="glodroid_forks.git" revision="refs/heads/mesa3d-next" />
+  <project path="external/u-boot"          remote="glodroid" name="glodroid_forks.git" revision="refs/heads/uboot-next" />
   <project path="kernel/glodroid-sunxi"    remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-sunxi-v1" />
   <project path="kernel/glodroid-broadcom" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-broadcom-v1" />
   <project path="kernel/glodroid-modules/rtl8189es" remote="github" name="jwrdegoede/rtl8189ES_linux.git" revision="42f293406700988c10655aaa5ee865b411389aeb" />
