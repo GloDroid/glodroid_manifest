@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <extend-project name="platform/external/drm_hwcomposer" revision="ff730f9b4b9a251782dc6808ea32c1ecf3cdb459"/>
-  <remove-project name="platform/external/mesa3d" />
-  <remove-project name="platform/external/u-boot" />
   <extend-project name="platform/packages/apps/TV" revision="3399fc08dec05bdaf6a9f3898951c290a4e724dc" />
   <extend-project name="platform/bootable/recovery" revision="5cdfaafec504c1cae231afe6af80ee5f8803a5f7" />
+  <project path="external/arm-trusted-firmware" remote="aosp" name="platform/external/arm-trusted-firmware" revision="de9d0d7c7ffc592e34f9c8c38c1971556d4d4de8" />
 
 </manifest>
