@@ -2,7 +2,7 @@
 
 Free and opensource AOSP based Android for the world's most accessible development platforms.  
 
-This version is based on [Android 10.0.0 Release 39](https://android.googlesource.com/platform/manifest/+/refs/heads/android-10.0.0_r39).  
+This version is based on [Android 10.0.0 Release 46](https://android.googlesource.com/platform/manifest/+/refs/heads/android-10.0.0_r46).  
 
 ## Supported devices:
 ### SUNXI platform:
