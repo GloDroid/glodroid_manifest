@@ -26,8 +26,15 @@ wget -P ~/bin/repo http://commondatastorage.googleapis.com/git-repo-downloads/re
 chmod a+x ~/bin/repo
 ```
 - Additional packages:
+### Ubuntu 18.04
 ```bash
-sudo apt-get install swig python-dev python3-dev libssl-dev flex bison device-tree-compiler mtools
+sudo apt-get install swig python-dev python3-dev libssl-dev flex bison device-tree-compiler mtools python3-pip git gettext
+sudo pip install Mako
+```
+
+### Ubuntu 20.04
+```bash
+sudo apt-get install swig python-dev-is-python2 python3-dev libssl-dev flex bison device-tree-compiler mtools python3-pip git gettext libncurses5
 sudo pip install Mako
 ```
   
