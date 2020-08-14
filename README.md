@@ -20,10 +20,14 @@ This version is based on [Android 10.0.0 Release 46](https://android.googlesourc
 
 ## You should install additional packages in order to build GloDroid under Ubuntu
 - [Google's required packages](https://source.android.com/setup/build/initializing).
-- Additional packages:
-  
+- Installing repo:
 ```bash
-sudo apt-get install swig repo python-dev python3-dev libssl-dev flex bison device-tree-compiler mtools
+wget -P ~/bin/repo http://commondatastorage.googleapis.com/git-repo-downloads/repo
+chmod a+x ~/bin/repo
+```
+- Additional packages:
+```bash
+sudo apt-get install swig python-dev python3-dev libssl-dev flex bison device-tree-compiler mtools
 sudo pip install Mako
 ```
   
