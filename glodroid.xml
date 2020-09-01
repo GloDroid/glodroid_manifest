@@ -20,6 +20,7 @@
   <project path="external/u-boot"          remote="glodroid" name="glodroid_forks.git" revision="refs/heads/uboot-next" />
   <project path="kernel/glodroid-sunxi"    remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-sunxi-v1" />
   <project path="kernel/glodroid-broadcom" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-broadcom-v1" />
+  <project path="external/tinyhal"         remote="glodroid" name="glodroid_forks.git" revision="refs/heads/tinyhal-next" />
   <project path="kernel/glodroid-modules/rtl8189es" remote="github" name="jwrdegoede/rtl8189ES_linux.git" revision="42f293406700988c10655aaa5ee865b411389aeb" />
   <project path="kernel/glodroid-modules/rtl8189fs" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/rtl8189fs-v3" />
   <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro-arm-linux-gnueabihf"
@@ -27,7 +28,6 @@
   <project path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-aarch64-linux-gnu"
                                            remote="glodroid" name="linaro_gcc_prebuilts.git" revision="refs/tags/gcc-linaro-7.4.1-2019.02-x86_64_aarch64-linux-gnu" />
 
-  <project path="external/tinyhal"        remote="github" name="CirrusLogic/tinyhal.git"    revision="8583031e7968202c82bc8f252e73e2a1dcb4a049" />
   <project path="kernel/firmware"         remote="github" name="armbian/firmware.git"       revision="88dd75506f11edd6b0d56d68d3b62cb7987aced8" clone-depth="1" />
   <project path="vendor/raspberry/firmware" remote="github" name="raspberrypi/firmware.git" revision="a6c9b6b48ce86ef2527586a50760d52f1b33f642" clone-depth="1" />
   <project path="vendor/raspberry/firmware-nonfree" remote="github" name="RPi-Distro/firmware-nonfree.git" revision="b7e706b67d1e16a939b39c4fe46acc446c060fcc" clone-depth="1" />
