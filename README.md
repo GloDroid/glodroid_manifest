@@ -6,17 +6,21 @@ This version is based on [Android 10.0.0 Release 46](https://android.googlesourc
 
 ## Supported devices:
 ### SUNXI platform:
-- Orange PI Plus 2 (Tested by community)
+- Orange PI Plus 2 (Not tested)
 - Orange PI Plus 2E
-- Orange PI Prime (Tested by community)
+- Orange PI Prime (Not tested)
 - Orange PI PC
-- Orange PI PC 2 (not tested)
+- Orange PI PC 2 (Not tested)
 - Orange PI 3
 - Pinephone
-- Pinetab
-- Orange PI WIN (not tested)
+- Pinetab (Not tested)
+- Orange PI WIN (Not tested)
 ### Broadcom platform:
 - Raspberry PI 4b
+
+**Not tested remark means that GloDroid team does not have real device to test before publishing release.
+We maintain them in buildable state and can accept requests to fix bugs,
+but reporter is responsible for testing**
 
 ## You should install additional packages in order to build GloDroid under Ubuntu
 - [Google's required packages](https://source.android.com/setup/build/initializing).
