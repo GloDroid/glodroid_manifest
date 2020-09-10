@@ -46,7 +46,7 @@ sudo pip install Mako
 ```bash
 mkdir -p GloDroid
 cd GloDroid
-repo init -u https://github.com/glodroid/glodroid_manifest
+repo init -u https://github.com/glodroid/glodroid_manifest -b refs/tags/v0.4.0
 repo sync -cq
 ```
   
