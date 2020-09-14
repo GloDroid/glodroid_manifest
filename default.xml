@@ -2,7 +2,6 @@
 <manifest>
 
   <include name="aosp.xml" />
-  <include name="aosp-override.xml" />
   <include name="glodroid.xml" />
 
 </manifest>
