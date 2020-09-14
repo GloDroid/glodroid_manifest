@@ -11,14 +11,14 @@
   <remove-project name="platform/external/u-boot" />
   <remove-project name="platform/external/drm_hwcomposer" />
 
-  <project path="device/glodroid"        remote="glodroid" name="glodroid_device.git"        revision="refs/tags/v0.4.0" />
+  <project path="device/glodroid"        remote="glodroid" name="glodroid_device.git"        revision="refs/tags/v0.5.0" />
   <project path="prebuilts/applications" remote="glodroid" name="glodroid_external_apks.git" revision="refs/tags/apps-v2" />
 
   <project path="external/iio-sensors-hal" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/iio-sensors-hal-v1" clone-depth="1" />
   <project path="external/gbm_gralloc"     remote="glodroid" name="glodroid_forks.git" revision="refs/tags/gbm_gralloc-v2" clone-depth="1" />
   <project path="external/drm_hwcomposer"  remote="glodroid" name="glodroid_forks.git" revision="refs/tags/drm_hwcomposer-v1" clone-depth="1" />
   <project path="external/mesa3d"          remote="glodroid" name="glodroid_forks.git" revision="refs/tags/mesa3d-v5" clone-depth="1" />
-  <project path="external/u-boot"          remote="glodroid" name="glodroid_forks.git" revision="refs/tags/uboot-v3" clone-depth="1" />
+  <project path="external/u-boot"          remote="glodroid" name="glodroid_forks.git" revision="refs/tags/uboot-v4" clone-depth="1" />
   <project path="kernel/glodroid-sunxi"    remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-sunxi-v2" clone-depth="1" />
   <project path="kernel/glodroid-broadcom" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-broadcom-v2" clone-depth="1" />
   <project path="external/tinyhal"         remote="glodroid" name="glodroid_forks.git" revision="refs/tags/tinyhal-v1" clone-depth="1" />
