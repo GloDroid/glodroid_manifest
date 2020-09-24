@@ -1,6 +1,6 @@
 # Manifest for GloDroid
 
-Free and opensource AOSP based Android for the world's most accessible development platforms.  
+Free and opensource AOSP based Android for the world's most accessible development platforms.
 
 This version is based on [Android 13.0.0 Release 11](https://android.googlesource.com/platform/manifest/+/refs/heads/android-13.0.0_r11).
 
@@ -96,4 +96,6 @@ Run .*/flash-sd.sh* utility for flashing Android to sdcard or *./flash-emmc.sh* 
   
 #### NOTE: Monitor has to be connected to the board and powered-up during flashing!
   
+You can find GloDroid community discord chat [here](https://discord.gg/2z5VUv6).
+
 Licensed under the [Apache-2.0](LICENSE).
