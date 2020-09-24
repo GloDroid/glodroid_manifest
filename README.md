@@ -1,6 +1,8 @@
 # Manifest for GloDroid
 
-Free and opensource AOSP based Android for the world's most accessible development platforms.  
+Free and opensource AOSP based Android for the world's most accessible development platforms.
+
+GloDroid [wiki](https://github.com/GloDroid/glodroid_manifest/wiki). You could find GloDroid community discord chat [here](https://discord.gg/2z5VUv6).
 
 This version is based on [Android 11.0.0 Release 3](https://android.googlesource.com/platform/manifest/+/refs/heads/android-11.0.0_r3).  
 
