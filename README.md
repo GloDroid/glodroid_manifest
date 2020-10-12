@@ -89,3 +89,4 @@ Run .*/flash-sd.sh* utility for flashing Android to sdcard or *./flash-emmc.sh* 
   
 #### NOTE: Monitor has to be connected to the board and powered-up during flashing!
   
+Licensed under the [Apache-2.0](LICENSE).
