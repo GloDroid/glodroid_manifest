@@ -30,8 +30,8 @@
   <project path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-aarch64-linux-gnu"
                                            remote="glodroid" name="linaro_gcc_prebuilts.git" revision="refs/tags/gcc-linaro-7.4.1-2019.02-x86_64_aarch64-linux-gnu" />
 
-  <project path="kernel/firmware"         remote="github" name="armbian/firmware.git"       revision="88dd75506f11edd6b0d56d68d3b62cb7987aced8" clone-depth="1" />
-  <project path="vendor/raspberry/firmware" remote="github" name="raspberrypi/firmware.git" revision="a6c9b6b48ce86ef2527586a50760d52f1b33f642" clone-depth="1" />
-  <project path="vendor/raspberry/firmware-nonfree" remote="github" name="RPi-Distro/firmware-nonfree.git" revision="b7e706b67d1e16a939b39c4fe46acc446c060fcc" clone-depth="1" />
+  <project path="kernel/firmware"         remote="github" name="armbian/firmware.git"       revision="7bcf6022ad0dc4fa02b9fc9d11100545930b52ed" clone-depth="1" />
+  <project path="vendor/raspberry/firmware" remote="github" name="raspberrypi/firmware.git" revision="9fd925bf1afd3a888d7ba13bad5815e432a071b4" clone-depth="1" />
+  <project path="vendor/raspberry/firmware-nonfree" remote="github" name="RPi-Distro/firmware-nonfree.git" revision="98e815735e2c805d65994ccc608f399595b74438" clone-depth="1" />
 
 </manifest>
