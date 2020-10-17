@@ -20,7 +20,7 @@
   <project path="external/mesa3d"          remote="glodroid" name="glodroid_forks.git" revision="refs/tags/mesa3d-v5" clone-depth="1" />
   <project path="external/u-boot"          remote="glodroid" name="glodroid_forks.git" revision="refs/tags/uboot-v4" clone-depth="1" />
   <project path="kernel/glodroid-sunxi"    remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-sunxi-v2" clone-depth="1" />
-  <project path="kernel/glodroid-broadcom" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-broadcom-v2" clone-depth="1" />
+  <project path="kernel/glodroid-broadcom" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-broadcom-v3" clone-depth="1" />
   <project path="external/tinyhal"         remote="glodroid" name="glodroid_forks.git" revision="refs/tags/tinyhal-v1" clone-depth="1" />
 
   <project path="kernel/glodroid-modules/rtl8189es" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/rtl8189es-v1" clone-depth="1" />
