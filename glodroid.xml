@@ -6,7 +6,6 @@
   <remote  name="glodroid" fetch="https://github.com/glodroid/" />
 
   <extend-project name="platform/external/arm-trusted-firmware" revision="de9d0d7c7ffc592e34f9c8c38c1971556d4d4de8" />
-  <extend-project name="platform/external/libdrm" revision="d3505e46291b7ce7b5eb56544e7dfc0ec5de5540"/>
   <remove-project name="platform/external/mesa3d" />
   <remove-project name="platform/external/u-boot" />
   <remove-project name="platform/external/drm_hwcomposer" />
