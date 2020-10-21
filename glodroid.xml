@@ -21,15 +21,15 @@
   <project path="external/u-boot"          remote="glodroid" name="glodroid_forks.git" revision="refs/tags/uboot-v4" clone-depth="1" />
   <project path="kernel/glodroid-sunxi"    remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-sunxi-v2" clone-depth="1" />
   <project path="kernel/glodroid-broadcom" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-broadcom-v3" clone-depth="1" />
-  <project path="external/tinyhal"         remote="glodroid" name="glodroid_forks.git" revision="refs/tags/tinyhal-v1" clone-depth="1" />
 
-  <project path="kernel/glodroid-modules/rtl8189es" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/rtl8189es-v1" clone-depth="1" />
-  <project path="kernel/glodroid-modules/rtl8189fs" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/rtl8189fs-v3" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro-arm-linux-gnueabihf"
                                            remote="glodroid" name="linaro_gcc_prebuilts.git" revision="refs/tags/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabihf" />
   <project path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-aarch64-linux-gnu"
                                            remote="glodroid" name="linaro_gcc_prebuilts.git" revision="refs/tags/gcc-linaro-7.4.1-2019.02-x86_64_aarch64-linux-gnu" />
 
+  <project path="external/tinyhal"         remote="github" name="CirrusLogic/tinyhal.git"    revision="69d47887c13da461bf8400231a1c7f7290826037" />
+  <project path="kernel/glodroid-modules/rtl8189es" remote="github" name="jwrdegoede/rtl8189ES_linux.git" revision="930d3d7cfe3b25c0cf8a57ca4b79f6aef5b6de4b" />
+  <project path="kernel/glodroid-modules/rtl8189fs" remote="github" name="jwrdegoede/rtl8189ES_linux.git" revision="0ba46e2434eec6f67d0712ed119a4ef8e05ccf91" />
   <project path="kernel/firmware"         remote="github" name="armbian/firmware.git"       revision="7bcf6022ad0dc4fa02b9fc9d11100545930b52ed" clone-depth="1" />
   <project path="vendor/raspberry/firmware" remote="github" name="raspberrypi/firmware.git" revision="9fd925bf1afd3a888d7ba13bad5815e432a071b4" clone-depth="1" />
   <project path="vendor/raspberry/firmware-nonfree" remote="github" name="RPi-Distro/firmware-nonfree.git" revision="98e815735e2c805d65994ccc608f399595b74438" clone-depth="1" />
