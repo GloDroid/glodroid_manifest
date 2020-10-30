@@ -4,6 +4,7 @@
   <remote  name="github"   fetch="https://github.com/" />
   <remote  name="gitlab"   fetch="https://gitlab.freedesktop.org/" />
   <remote  name="glodroid" fetch="https://github.com/glodroid/" />
+  <remote  name="megous"   fetch="https://megous.com/git/" />
 
   <extend-project name="platform/external/arm-trusted-firmware" revision="de9d0d7c7ffc592e34f9c8c38c1971556d4d4de8" />
   <remove-project name="platform/external/mesa3d" />
@@ -32,5 +33,6 @@
   <project path="kernel/firmware"         remote="github" name="armbian/firmware.git"       revision="7bcf6022ad0dc4fa02b9fc9d11100545930b52ed" clone-depth="1" />
   <project path="vendor/raspberry/firmware" remote="github" name="raspberrypi/firmware.git" revision="9fd925bf1afd3a888d7ba13bad5815e432a071b4" clone-depth="1" />
   <project path="vendor/raspberry/firmware-nonfree" remote="github" name="RPi-Distro/firmware-nonfree.git" revision="98e815735e2c805d65994ccc608f399595b74438" clone-depth="1" />
+  <project path="vendor/megous/firmware"  remote="megous"           name="linux-firmware"   revision="4ec2645b007ba4c3f2962e38b50c06f274abbf7c" clone-depth="1" />
 
 </manifest>
