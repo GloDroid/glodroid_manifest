@@ -26,7 +26,7 @@ but reporter is responsible for testing**
 - [Google's required packages](https://source.android.com/setup/build/initializing).
 - Installing repo:
 ```bash
-wget -P ~/bin/repo http://commondatastorage.googleapis.com/git-repo-downloads/repo
+wget -P ~/bin http://commondatastorage.googleapis.com/git-repo-downloads/repo
 chmod a+x ~/bin/repo
 ```
 - Additional packages:
@@ -39,7 +39,7 @@ sudo pip install Mako
 ### Ubuntu 20.04
 ```bash
 sudo apt-get install swig python-dev-is-python2 python3-dev libssl-dev flex bison device-tree-compiler mtools python3-pip git gettext libncurses5
-sudo pip install Mako
+sudo pip3 install Mako
 ```
   
 ## Fetching Android sources
