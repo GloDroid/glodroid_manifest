@@ -35,5 +35,6 @@
   <project path="vendor/raspberry/firmware-nonfree" remote="github" name="RPi-Distro/firmware-nonfree.git" revision="98e815735e2c805d65994ccc608f399595b74438" clone-depth="1" />
   <project path="vendor/megous/firmware"  remote="megous"           name="linux-firmware"   revision="4ec2645b007ba4c3f2962e38b50c06f274abbf7c" clone-depth="1" />
   <project path="vendor/amlogic/amlogic-boot-fip" remote="github" name="LibreELEC/amlogic-boot-fip.git" revision="9f21abeb339b7cdd8c66e3e1c94ee9f133ad762e" clone-depth="1" />
+  <project path="vendor/rockchip/rkbin" remote="github" name="rockchip-linux/rkbin.git" revision="0bb1c512492386a72a3a0b5a0e18e49c636577b9" clone-depth="1" />
 
 </manifest>
