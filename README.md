@@ -26,7 +26,7 @@ but reporter is responsible for testing**
 - [Google's required packages](https://source.android.com/setup/build/initializing).
 - Installing repo:
 ```bash
-wget -P ~/bin/repo http://commondatastorage.googleapis.com/git-repo-downloads/repo
+wget -P ~/bin http://commondatastorage.googleapis.com/git-repo-downloads/repo
 chmod a+x ~/bin/repo
 ```
 - Additional packages:
