@@ -17,6 +17,8 @@ This version is based on [Android 11.0.0 Release 31](https://android.googlesourc
 - Orange PI WIN (Not tested)
 ### Broadcom platform:
 - Raspberry PI 4b
+### Rockchip platform:
+- Orange PI 4
 
 **Not tested remark means that GloDroid team does not have real device to test before publishing release.
 We maintain them in buildable state and can accept requests to fix bugs,
