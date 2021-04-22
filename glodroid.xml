@@ -28,6 +28,8 @@
                                            remote="glodroid" name="linaro_gcc_prebuilts.git" revision="refs/tags/gcc-linaro-7.4.1-2019.02-x86_64_aarch64-linux-gnu" />
   <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro-arm-eabi"
                                            remote="glodroid" name="linaro_gcc_prebuilts.git" revision="refs/tags/gcc-linaro-7.5.0-2019.12-x86_64_arm-eabi" />
+  <project path="prebuilts/gcc/linux-x86/or1k/gcc-linux-or1k"
+                                           remote="glodroid" name="linaro_gcc_prebuilts.git" revision="refs/tags/openrisc--musl--stable-2020.08-1" />
 
   <project path="external/tinyhal"         remote="github" name="CirrusLogic/tinyhal.git"    revision="69d47887c13da461bf8400231a1c7f7290826037" />
   <project path="kernel/glodroid-modules/rtl8189es" remote="github" name="jwrdegoede/rtl8189ES_linux.git" revision="930d3d7cfe3b25c0cf8a57ca4b79f6aef5b6de4b" />
