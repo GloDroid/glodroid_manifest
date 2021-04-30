@@ -24,37 +24,46 @@ This version is based on [Android 11.0.0 Release 31](https://android.googlesourc
 We maintain them in buildable state and can accept requests to fix bugs,
 but reporter is responsible for testing**
 
-## You should install additional packages in order to build GloDroid under Ubuntu
-- [Google's required packages](https://source.android.com/setup/build/initializing).
-- Installing repo:
+## Fetching Android sources
+- Installing 'repo' tool:
 ```bash
+sudo apt-get install -y python-is-python3 wget
 wget -P ~/bin http://commondatastorage.googleapis.com/git-repo-downloads/repo
 chmod a+x ~/bin/repo
 ```
-- Additional packages:
-### Ubuntu 18.04
-```bash
-sudo apt-get install swig python-dev python3-dev libssl-dev flex bison device-tree-compiler mtools python3-pip git gettext libgmp-dev libmpc-dev
-sudo pip install Mako
-```
 
-### Ubuntu 20.04
-```bash
-sudo apt-get install swig python-dev-is-python2 python3-dev libssl-dev flex bison device-tree-compiler mtools python3-pip git gettext libncurses5 libgmp-dev libmpc-dev
-curl https://bootstrap.pypa.io/2.6/get-pip.py --output get-pip.py
-chmod +x get-pip.py
-sudo ./get-pip.py
-sudo pip2 install Mako
-```
-  
-## Fetching Android sources
+- Cloning the GloDroid
 ```bash
 mkdir -p GloDroid
 cd GloDroid
 repo init -u https://github.com/glodroid/glodroid_manifest
 repo sync -cq
 ```
-  
+
+## You should install additional packages in order to build GloDroid
+(Ubuntu 20.04 LTS is only supported. Building on other distributions can be done using docker)
+<br/>
+
+- [Install AOSP required packages](https://source.android.com/setup/build/initializing).
+```bash
+sudo apt-get install -y git-core gnupg flex bison build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z1-dev libgl1-mesa-dev libxml2-utils xsltproc unzip fontconfig
+```
+
+<br/>
+
+- Install additional packages
+```bash
+sudo apt-get install -y swig libssl-dev flex bison device-tree-compiler mtools git gettext libncurses5 libgmp-dev libmpc-dev cpio rsync dosfstools kmod gdisk
+```
+
+<br/>
+
+- Install additional packages (for building mesa3d and other meson-based components)
+```bash
+sudo apt-get install -y meson python3-pip pkg-config python3-dev
+sudo pip3 install mako
+```
+
 ### Building GloDroid
 ```bash
 cd GloDroid
