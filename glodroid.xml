@@ -17,14 +17,14 @@
   <project path="device/glodroid"        remote="glodroid" name="glodroid_device.git"        revision="refs/tags/v0.6.1" />
   <project path="prebuilts/applications" remote="glodroid" name="glodroid_external_apks.git" revision="refs/tags/apps-v0.6.0" />
 
-  <project path="external/iio-sensors-hal" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/iio-sensors-hal-v1" clone-depth="1" />
-  <project path="external/gbm_gralloc"     remote="glodroid" name="glodroid_forks.git" revision="refs/tags/gbm_gralloc-v0.6.0" clone-depth="1" />
-  <project path="external/drm_hwcomposer"  remote="glodroid" name="glodroid_forks.git" revision="refs/tags/drm_hwcomposer-v0.6.0" clone-depth="1" />
-  <project path="external/mesa3d"          remote="glodroid" name="glodroid_forks.git" revision="refs/tags/mesa3d-v0.6.1" clone-depth="1" />
-  <project path="external/u-boot"          remote="glodroid" name="glodroid_forks.git" revision="refs/tags/uboot-v0.6.1" clone-depth="1" />
-  <project path="kernel/glodroid-megous"   remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-megous-v0.6.1" clone-depth="1" />
-  <project path="kernel/glodroid-broadcom" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-broadcom-v0.6.0" clone-depth="1" />
-  <project path="kernel/glodroid-stable"   remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-stable-v0.6.1" clone-depth="1" />
+  <project path="external/iio-sensors-hal" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/iio-sensors-hal-v1" />
+  <project path="external/gbm_gralloc"     remote="glodroid" name="glodroid_forks.git" revision="refs/tags/gbm_gralloc-v0.6.0" />
+  <project path="external/drm_hwcomposer"  remote="glodroid" name="glodroid_forks.git" revision="refs/tags/drm_hwcomposer-v0.6.0" />
+  <project path="external/mesa3d"          remote="glodroid" name="glodroid_forks.git" revision="refs/tags/mesa3d-v0.6.1" />
+  <project path="external/u-boot"          remote="glodroid" name="glodroid_forks.git" revision="refs/tags/uboot-v0.6.1" />
+  <project path="kernel/glodroid-megous"   remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-megous-v0.6.1" />
+  <project path="kernel/glodroid-broadcom" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-broadcom-v0.6.0" />
+  <project path="kernel/glodroid-stable"   remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-stable-v0.6.1" />
 
   <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro-arm-linux-gnueabihf"
                                            remote="glodroid" name="linaro_gcc_prebuilts.git" revision="refs/tags/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabihf" />
