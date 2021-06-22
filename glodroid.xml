@@ -17,6 +17,11 @@
   <project path="device/glodroid"        remote="glodroid" name="glodroid_device.git"        revision="refs/tags/v0.6.1" />
   <project path="prebuilts/applications" remote="glodroid" name="glodroid_external_apks.git" revision="refs/tags/apps-v0.6.0" />
 
+  <project path="external/libcamera"       remote="glodroid" name="glodroid_forks.git" revision="refs/heads/libcamera-next" />
+  <project path="external/boost"           remote="glodroid" name="glodroid_forks.git" revision="refs/tags/boost-v0.7.0" />
+  <project path="external/libyaml"         remote="glodroid" name="glodroid_forks.git" revision="refs/heads/libyaml-next" />
+  <project path="external/libyuv_chromium" remote="glodroid" name="glodroid_forks.git" revision="refs/heads/libyuv_chromium-next" />
+
   <project path="external/iio-sensors-hal" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/iio-sensors-hal-v1" />
   <project path="external/gbm_gralloc"     remote="glodroid" name="glodroid_forks.git" revision="refs/tags/gbm_gralloc-v0.6.0" />
   <project path="external/drm_hwcomposer"  remote="glodroid" name="glodroid_forks.git" revision="refs/tags/drm_hwcomposer-v0.6.0" />
