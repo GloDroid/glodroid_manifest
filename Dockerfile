@@ -13,9 +13,9 @@ RUN apt-get install -y git-core gnupg flex bison build-essential zip curl zlib1g
 # Install additional packages
 RUN apt-get install -y swig libssl-dev flex bison device-tree-compiler mtools git gettext libncurses5 libgmp-dev libmpc-dev cpio rsync dosfstools kmod gdisk wget
 
-# Install additional packages (for building mesa3d and other meson-based components)
-RUN apt-get install -y meson python3-pip pkg-config python3-dev
-RUN pip3 install mako
+# Install additional packages (for building mesa3d, libcamera and other meson-based components)
+RUN apt-get install -y python3-pip pkg-config python3-dev ninja-build
+RUN pip3 install mako meson jinja2 ply
 
 # Install additional packages (required by repo utility)
 RUN apt-get install -y python-is-python3
