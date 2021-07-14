@@ -10,6 +10,7 @@
   <project path="system/apex" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/aosp/system/apex-v0.6.0" />
 
   <extend-project name="platform/external/arm-trusted-firmware" revision="de9d0d7c7ffc592e34f9c8c38c1971556d4d4de8" />
+  <remove-project name="platform/external/minigbm" />
   <remove-project name="platform/external/mesa3d" />
   <remove-project name="platform/external/u-boot" />
   <remove-project name="platform/external/drm_hwcomposer" />
@@ -23,7 +24,7 @@
   <project path="external/libyuv_chromium" remote="glodroid" name="glodroid_forks.git" revision="refs/heads/libyuv_chromium-next" />
 
   <project path="external/iio-sensors-hal" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/iio-sensors-hal-v1" />
-  <project path="external/gbm_gralloc"     remote="glodroid" name="glodroid_forks.git" revision="refs/tags/gbm_gralloc-v0.6.0" />
+  <project path="external/minigbm"         remote="glodroid" name="glodroid_forks.git" revision="refs/tags/minigbm-v0.7.0" />
   <project path="external/drm_hwcomposer"  remote="glodroid" name="glodroid_forks.git" revision="refs/tags/drm_hwcomposer-v0.6.0" />
   <project path="external/mesa3d"          remote="glodroid" name="glodroid_forks.git" revision="refs/tags/mesa3d-v0.6.1" />
   <project path="external/u-boot"          remote="glodroid" name="glodroid_forks.git" revision="refs/tags/uboot-v0.6.1" />
