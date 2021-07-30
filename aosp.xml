@@ -2,10 +2,11 @@
 
   <!--
   <contactinfo bugurl="go/repo-bug"/>
+  -->
   <remote name="aosp" fetch="https://android.googlesource.com/" review="https://android.googlesource.com/"/>
   <default revision="master" remote="aosp" sync-j="4"/>
   <superproject name="platform/superproject" remote="aosp"/>
-  -->
+
   <project path="build/make" name="platform/build" groups="pdk" revision="757e2e1fc10d92ceae13d653c2e93ebd571e5a68">
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
     <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
