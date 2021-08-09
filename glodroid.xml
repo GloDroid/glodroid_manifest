@@ -6,9 +6,6 @@
   <remote  name="glodroid" fetch="https://github.com/glodroid/" />
   <remote  name="megous"   fetch="https://megous.com/git/" />
 
-  <remove-project name="platform/system/apex" />
-  <project path="system/apex" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/aosp/system/apex-v0.6.0" />
-
   <extend-project name="platform/external/arm-trusted-firmware" revision="de9d0d7c7ffc592e34f9c8c38c1971556d4d4de8" />
   <remove-project name="platform/external/minigbm" />
   <remove-project name="platform/external/mesa3d" />
