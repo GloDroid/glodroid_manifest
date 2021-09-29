@@ -10,6 +10,7 @@ This version is based on [Android 11.0.0 Release 31](https://android.googlesourc
 - Orange PI Plus 2E
 - Orange PI Prime (Not tested)
 - Orange PI PC
+- Orange PI PC Plus
 - Orange PI PC 2 (Not tested)
 - Orange PI 3
 - Pinephone
