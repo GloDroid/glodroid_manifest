@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <include name="aosp.xml" />
+  <include name="lineage.xml" />
   <include name="glodroid.xml" />
 
 </manifest>
