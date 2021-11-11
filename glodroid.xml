@@ -44,7 +44,7 @@
   <project path="kernel/glodroid-modules/rtl8189es" remote="github" name="jwrdegoede/rtl8189ES_linux.git" revision="be378f47055da1bae42ff6ec1d62f1a5052ef097" />
   <project path="kernel/glodroid-modules/rtl8189fs" remote="github" name="jwrdegoede/rtl8189ES_linux.git" revision="3129a665f835ce0342f9a85a0ce14a556e656b8c" />
   <project path="kernel/firmware"         remote="github" name="armbian/firmware.git"       revision="7bcf6022ad0dc4fa02b9fc9d11100545930b52ed" clone-depth="1" />
-  <project path="vendor/raspberry/firmware" remote="github" name="raspberrypi/firmware.git" revision="8c7c52466505df5d420a5cb9131ec29205bcecf8" clone-depth="1" />
+  <project path="vendor/raspberry/firmware" remote="github" name="raspberrypi/firmware.git" revision="fa9a00624e7d5d3dcdb297dff132dc32cc2d9a25" clone-depth="1" />
   <project path="vendor/raspberry/firmware-nonfree" remote="github" name="RPi-Distro/firmware-nonfree.git" revision="98e815735e2c805d65994ccc608f399595b74438" clone-depth="1" />
   <project path="vendor/megous/firmware"  remote="megous"           name="linux-firmware"   revision="4ec2645b007ba4c3f2962e38b50c06f274abbf7c" clone-depth="1" />
   <project path="vendor/amlogic/amlogic-boot-fip" remote="github" name="LibreELEC/amlogic-boot-fip.git" revision="9f21abeb339b7cdd8c66e3e1c94ee9f133ad762e" clone-depth="1" />
