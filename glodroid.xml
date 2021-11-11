@@ -6,7 +6,7 @@
   <remote  name="glodroid" fetch="https://github.com/glodroid/" />
   <remote  name="megous"   fetch="https://megous.com/git/" />
 
-  <extend-project name="platform/external/arm-trusted-firmware" revision="de9d0d7c7ffc592e34f9c8c38c1971556d4d4de8" />
+  <extend-project name="platform/external/arm-trusted-firmware" revision="a127b99d5a063c798d1c6d2e1d4791a630f78355" />
   <remove-project name="platform/external/minigbm" />
   <remove-project name="platform/external/mesa3d" />
   <remove-project name="platform/external/drm_hwcomposer" />
