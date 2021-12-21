@@ -2,7 +2,7 @@
 
 Free and opensource AOSP based Android for the world's most accessible development platforms.  
 
-This version is based on [Android 12.0.0 Release 15](https://android.googlesource.com/platform/manifest/+/refs/heads/android-12.0.0_r15).  
+This version is based on [Android 12.0.0 Release 31](https://android.googlesource.com/platform/manifest/+/refs/heads/android-12.0.0_r31).  
 
 ## Supported devices:
 ### SUNXI platform:
