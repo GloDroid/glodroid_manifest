@@ -25,14 +25,30 @@ RUN apt-get update && apt-get upgrade -y && \
 # Install additional packages (for building mesa3d, libcamera and other meson-based components)
 RUN pip3 install mako meson jinja2 ply
 
+ENV RUN_USER user
+ENV RUN_UID 1000
+
+ENV USER_HOME /home/${RUN_USER}
+
+RUN mkdir -pv ${USER_HOME}
 # Create new user
-RUN useradd -m user
-USER user
+RUN adduser \
+    --gecos 'Build User' \
+    --shell '/usr/bin/bash' \
+    --uid ${RUN_UID} \
+    --disabled-login \
+    --disabled-password ${RUN_USER}
+
+# Create project path
+RUN mkdir -pv ${USER_HOME}/aosp
+WORKDIR ${USER_HOME}/aosp
+
+RUN chown -R ${RUN_USER}:${RUN_USER} ${USER_HOME}
+RUN chmod -R 775 ${USER_HOME}
+
+# Pass control to a newly created user
+USER ${RUN_USER}
 
 # Install repo
-RUN wget -P ~/bin http://commondatastorage.googleapis.com/git-repo-downloads/repo
-RUN chmod a+x ~/bin/repo
-
-# Prepare workdir
-RUN mkdir ~/aosp
-WORKDIR /home/user/aosp
+RUN wget -P ${USER_HOME}/bin http://commondatastorage.googleapis.com/git-repo-downloads/repo
+RUN chmod a+x ${USER_HOME}/bin/repo
