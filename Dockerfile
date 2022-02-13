@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-ARG DEBIAN_FRONTEND=noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
 LABEL maintainer="Roman Marchenko <roman.marchenko@globallogic.com>"
 
@@ -22,10 +22,9 @@ RUN apt-get update && apt-get upgrade -y && \
     python-is-python3 \
     # Add extra tools
     sudo && \
-    apt-get clean && rm -rf /var/lib/apt/lists/*
-
-# Install additional packages (for building mesa3d, libcamera and other meson-based components)
-RUN pip3 install mako meson jinja2 ply
+    apt-get clean && rm -rf /var/lib/apt/lists/* && \
+    # Install additional packages (for building mesa3d, libcamera and other meson-based components)
+    pip3 install mako meson jinja2 ply
 
 ENV RUN_USER user
 ENV RUN_UID 1000
@@ -39,17 +38,14 @@ RUN adduser \
     --shell '/usr/bin/bash' \
     --uid ${RUN_UID} \
     --disabled-login \
-    --disabled-password ${RUN_USER}
+    --disabled-password ${RUN_USER} \
+    && adduser ${RUN_USER} sudo
 
 # Create project path
 RUN mkdir -pv ${USER_HOME}/aosp
 WORKDIR ${USER_HOME}/aosp
 
-RUN chown -R ${RUN_USER}:${RUN_USER} ${USER_HOME}
-RUN chmod -R 775 ${USER_HOME}
-
-#  Add new user docker to sudo group
-RUN adduser ${RUN_USER} sudo
+RUN chown -R ${RUN_USER}:${RUN_USER} ${USER_HOME} && chmod -R 775 ${USER_HOME}
 
 # Ensure sudo group users are not
 # asked for a password when using
@@ -61,7 +57,6 @@ RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> \
 USER ${RUN_USER}
 
 # Install repo
-RUN wget -P ${USER_HOME}/bin http://commondatastorage.googleapis.com/git-repo-downloads/repo
-RUN chmod a+x ${USER_HOME}/bin/repo
+RUN wget -P ${USER_HOME}/bin http://commondatastorage.googleapis.com/git-repo-downloads/repo && chmod a+x ${USER_HOME}/bin/repo
 
 CMD [ "/bin/bash" ]
