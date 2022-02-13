@@ -63,3 +63,5 @@ USER ${RUN_USER}
 # Install repo
 RUN wget -P ${USER_HOME}/bin http://commondatastorage.googleapis.com/git-repo-downloads/repo
 RUN chmod a+x ${USER_HOME}/bin/repo
+
+CMD [ "/bin/bash" ]
