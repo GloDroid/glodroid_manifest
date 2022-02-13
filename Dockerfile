@@ -19,7 +19,9 @@ RUN apt-get update && apt-get upgrade -y && \
     # Install additional packages (for building mesa3d, libcamera and other meson-based components)
     python3-pip pkg-config python3-dev ninja-build \
     # Install additional packages (required by repo utility)
-    python-is-python3 && \
+    python-is-python3 \
+    # Add extra tools
+    sudo && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Install additional packages (for building mesa3d, libcamera and other meson-based components)
@@ -45,6 +47,15 @@ WORKDIR ${USER_HOME}/aosp
 
 RUN chown -R ${RUN_USER}:${RUN_USER} ${USER_HOME}
 RUN chmod -R 775 ${USER_HOME}
+
+#  Add new user docker to sudo group
+RUN adduser ${RUN_USER} sudo
+
+# Ensure sudo group users are not
+# asked for a password when using
+# sudo command by ammending sudoers file
+RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> \
+/etc/sudoers
 
 # Pass control to a newly created user
 USER ${RUN_USER}
