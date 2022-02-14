@@ -24,7 +24,7 @@ RUN apt-get update && apt-get upgrade -y && \
     sudo && \
     apt-get clean && rm -rf /var/lib/apt/lists/* && \
     # Install additional packages (for building mesa3d, libcamera and other meson-based components)
-    pip3 install mako meson jinja2 ply
+    pip3 install mako meson jinja2 ply pyyaml
 
 ENV RUN_USER user
 ENV RUN_UID 1000
