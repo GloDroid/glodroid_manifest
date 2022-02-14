@@ -60,7 +60,7 @@ sudo apt-get install -y swig libssl-dev flex bison device-tree-compiler mtools g
 - Install additional packages (for building mesa3d, libcamera and other meson-based components)
 ```bash
 sudo apt-get install -y python3-pip pkg-config python3-dev ninja-build
-sudo pip3 install mako meson jinja2 ply
+sudo pip3 install mako meson jinja2 ply pyyaml
 ```
 
 ### Building GloDroid
