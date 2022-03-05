@@ -15,7 +15,7 @@ RUN apt-get update && apt-get upgrade -y && \
     libxml2-utils xsltproc unzip fontconfig \
     # Install additional packages
     swig libssl-dev flex bison device-tree-compiler mtools git \
-    gettext libncurses5 libgmp-dev libmpc-dev cpio rsync dosfstools kmod gdisk wget \
+    gettext libncurses5 libgmp-dev libmpc-dev cpio rsync dosfstools kmod gdisk wget lz4 \
     # Install additional packages (for building mesa3d, libcamera and other meson-based components)
     python3-pip pkg-config python3-dev ninja-build \
     # Install additional packages (required by repo utility)

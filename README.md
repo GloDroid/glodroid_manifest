@@ -52,7 +52,7 @@ sudo apt-get install -y git-core gnupg flex bison build-essential zip curl zlib1
 
 - Install additional packages
 ```bash
-sudo apt-get install -y swig libssl-dev flex bison device-tree-compiler mtools git gettext libncurses5 libgmp-dev libmpc-dev cpio rsync dosfstools kmod gdisk
+sudo apt-get install -y swig libssl-dev flex bison device-tree-compiler mtools git gettext libncurses5 libgmp-dev libmpc-dev cpio rsync dosfstools kmod gdisk lz4
 ```
 
 <br/>
