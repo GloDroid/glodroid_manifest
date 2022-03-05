@@ -24,3 +24,9 @@ shell: ## Start shell into dummy container. Usage: $ make shell
 
 clean: ## Remove images from local registry. Usage: $ make clean
 	$(docker_bin) ps -a | awk -F "\t" '{ print $$1,$$7 }' | grep "$(image_name)" | awk '{print $$1 }' | xargs -I {} $(docker_bin) rm -f {} ; \
+
+build_all: ## Build all targets within a container (for CI purposes)
+	make clean
+	make build
+	make run `cd ../../.. && pwd`
+	$(docker_bin) exec -it $(image_name) bash -c "cd .repo/manifests/.ci && make build_all"
