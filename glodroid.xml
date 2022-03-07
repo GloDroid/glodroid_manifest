@@ -27,6 +27,8 @@
   <project path="kernel/glodroid-megous"   remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-megous-v0.7.1" />
   <project path="kernel/glodroid-broadcom" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-broadcom-v0.7.1" />
   <project path="kernel/glodroid-stable"   remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-stable-v0.7.1" />
+  <project path="kernel/glodroid-modules/rtl8189es" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/rtl8189es-v0.7.1" />
+  <project path="kernel/glodroid-modules/rtl8189fs" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/rtl8189fs-v0.7.1" />
 
   <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro-arm-linux-gnueabihf"
                                            remote="glodroid" name="linaro_gcc_prebuilts.git" revision="refs/tags/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabihf" />
@@ -41,8 +43,6 @@
   <project path="external/crust-firmware/crust"                remote="github" name="crust-firmware/crust.git"                   revision="23d6d7b4fbb5375845d96f622e82435064343098" />
 
   <project path="external/tinyhal"         remote="github" name="CirrusLogic/tinyhal.git"    revision="69d47887c13da461bf8400231a1c7f7290826037" />
-  <project path="kernel/glodroid-modules/rtl8189es" remote="github" name="jwrdegoede/rtl8189ES_linux.git" revision="be378f47055da1bae42ff6ec1d62f1a5052ef097" />
-  <project path="kernel/glodroid-modules/rtl8189fs" remote="github" name="jwrdegoede/rtl8189ES_linux.git" revision="3129a665f835ce0342f9a85a0ce14a556e656b8c" />
   <project path="kernel/firmware"         remote="github" name="armbian/firmware.git"       revision="4df7fecf02b2940150277a3daa40078e49fbd88c" clone-depth="1" />
   <project path="vendor/raspberry/firmware" remote="github" name="raspberrypi/firmware.git" revision="577aef2bc2f8e9dcd6955a85cf0621cc73b29db7" clone-depth="1" />
   <project path="vendor/raspberry/firmware-nonfree" remote="github" name="RPi-Distro/firmware-nonfree.git" revision="54ffdd6e2ea6055d46656b78e148fe7def3ec9d8" clone-depth="1" />
