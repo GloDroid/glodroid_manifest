@@ -4,6 +4,14 @@ docker_bin := $(shell command -v docker 2> /dev/null)
 image_name := dummy
 local_android_root := $(word 2, $(MAKECMDGOALS))
 
+# Please run the following command prior to using this makefile
+# sudo apt install docker.io
+# sudo usermod -aG docker $USER
+# reboot
+ifeq ($(docker_bin),)
+$(error please install docker)
+endif
+
 .PHONY : build clean help run stop shell
 .DEFAULT_GOAL := help
 
