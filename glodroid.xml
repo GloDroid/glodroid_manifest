@@ -44,7 +44,7 @@
 
   <project path="external/tinyhal"         remote="github" name="CirrusLogic/tinyhal.git"    revision="69d47887c13da461bf8400231a1c7f7290826037" />
   <project path="kernel/firmware"         remote="github" name="armbian/firmware.git"       revision="4df7fecf02b2940150277a3daa40078e49fbd88c" clone-depth="1" />
-  <project path="vendor/raspberry/firmware" remote="github" name="raspberrypi/firmware.git" revision="577aef2bc2f8e9dcd6955a85cf0621cc73b29db7" clone-depth="1" />
+  <project path="vendor/raspberry/firmware" remote="github" name="raspberrypi/firmware.git" revision="7cb1aa0ff575959163e1cea042e5e3ab5a7a90d2" clone-depth="1" />
   <project path="vendor/raspberry/firmware-nonfree" remote="github" name="RPi-Distro/firmware-nonfree.git" revision="54ffdd6e2ea6055d46656b78e148fe7def3ec9d8" clone-depth="1" />
   <project path="vendor/megous/firmware"  remote="megous"           name="linux-firmware"   revision="6e8e591e17e207644dfe747e51026967bb1edab5" clone-depth="1" />
   <project path="vendor/amlogic/amlogic-boot-fip" remote="github" name="LibreELEC/amlogic-boot-fip.git" revision="6041db8dfd3d8f815a338d78480e9b32c6abc7d4" clone-depth="1" />
