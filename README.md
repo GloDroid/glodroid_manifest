@@ -6,22 +6,14 @@ This version is based on Android master branch as of 12 MAR 2022
 
 ## Supported devices:
 ### SUNXI platform:
-- Orange PI Plus 2 (Not tested)
-- Orange PI Plus 2E
-- Orange PI Prime (Not tested)
-- Orange PI PC
-- Orange PI PC Plus
-- Orange PI PC 2 (Not tested)
+- Orange PI Plus 2E (temporary unsupported)
+- Orange PI PC (temporary unsupported)
+- Orange PI PC Plus (temporary unsupported)
 - Orange PI 3
 - Pinephone
-- Pinetab (Not tested)
-- Orange PI WIN (Not tested)
+- Pinetab (temporary unsupported)
 ### Broadcom platform:
 - Raspberry PI 4b
-
-**Not tested remark means that GloDroid team does not have real device to test before publishing release.
-We maintain them in buildable state and can accept requests to fix bugs,
-but reporter is responsible for testing**
 
 ## Fetching Android sources
 - Installing 'repo' tool:
