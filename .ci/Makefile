@@ -3,6 +3,7 @@ SHELL = bash
 VARIANT := userdebug
 
 TARGETS :=     \
+    pinephonepro\
     pinephone  \
     pinetab    \
     opi3       \

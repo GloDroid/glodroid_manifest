@@ -11,6 +11,7 @@ This version is based on Android master branch as of 20 Apr 2022
 - Orange PI PC Plus (temporary unsupported)
 - Orange PI 3
 - Pinephone
+- PinephonePro
 - Pinetab (temporary unsupported)
 ### Broadcom platform:
 - Raspberry PI 4b
