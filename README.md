@@ -2,7 +2,7 @@
 
 Free and opensource AOSP based Android for the world's most accessible development platforms.  
 
-This version is based on Android master branch as of 12 MAR 2022
+This version is based on Android master branch as of 20 Apr 2022
 
 ## Supported devices:
 ### SUNXI platform:
