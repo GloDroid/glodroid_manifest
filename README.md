@@ -5,13 +5,14 @@ Free and opensource AOSP based Android for the world's most accessible developme
 This version is based on Android master branch as of 20 Apr 2022
 
 ## Supported devices:
+### Rockchip platform:
+- PinephonePro
 ### SUNXI platform:
 - Orange PI Plus 2E (temporary unsupported)
 - Orange PI PC (temporary unsupported)
 - Orange PI PC Plus (temporary unsupported)
 - Orange PI 3
 - Pinephone
-- PinephonePro
 - Pinetab (temporary unsupported)
 ### Broadcom platform:
 - Raspberry PI 4b
