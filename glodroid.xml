@@ -13,7 +13,7 @@
   <remove-project name="platform/external/mesa3d" />
   <remove-project name="platform/external/drm_hwcomposer" />
 
-  <project path="device/glodroid"        remote="glodroid" name="glodroid_device.git"        revision="refs/tags/v0.7.5" />
+  <project path="device/glodroid"        remote="glodroid" name="glodroid_device.git"        revision="refs/tags/v0.7.6" />
   <project path="prebuilts/applications" remote="glodroid" name="glodroid_external_apks.git" revision="refs/tags/apps-v0.7.1" />
 
   <project path="external/libcamera"       remote="glodroid" name="glodroid_forks.git" revision="refs/tags/libcamera-v0.7.4" />
@@ -22,10 +22,10 @@
 
   <project path="external/iio-sensors-hal" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/iio-sensors-hal-v0.7.4" />
   <project path="external/minigbm"         remote="glodroid" name="glodroid_forks.git" revision="refs/tags/minigbm-v0.7.2" />
-  <project path="external/drm_hwcomposer"  remote="glodroid" name="glodroid_forks.git" revision="refs/tags/drm_hwcomposer-v0.7.5" />
-  <project path="external/mesa3d"          remote="glodroid" name="glodroid_forks.git" revision="refs/tags/mesa3d-v0.7.2" />
+  <project path="external/drm_hwcomposer"  remote="glodroid" name="glodroid_forks.git" revision="refs/tags/drm_hwcomposer-v0.7.6" />
+  <project path="external/mesa3d"          remote="glodroid" name="glodroid_forks.git" revision="refs/tags/mesa3d-v0.7.6" />
   <project path="external/u-boot"          remote="glodroid" name="glodroid_forks.git" revision="refs/tags/uboot-v0.7.5" />
-  <project path="kernel/glodroid-megous"   remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-megous-v0.7.2" />
+  <project path="kernel/glodroid-megous"   remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-megous-v0.7.6" />
   <project path="kernel/glodroid-megous-edge"   remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-megous-edge-v0.7.4" />
   <project path="kernel/glodroid-broadcom" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-broadcom-v0.7.3" />
   <project path="kernel/glodroid-stable"   remote="glodroid" name="glodroid_forks.git" revision="refs/tags/kernel-stable-v0.7.1" />
