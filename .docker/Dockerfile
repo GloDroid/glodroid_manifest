@@ -59,4 +59,6 @@ USER ${RUN_USER}
 # Install repo
 RUN wget -P ${USER_HOME}/bin http://commondatastorage.googleapis.com/git-repo-downloads/repo && chmod a+x ${USER_HOME}/bin/repo
 
+RUN git config --global user.name "FIRST_NAME LAST_NAME" && git config --global user.email "MY_NAME@example.com"
+
 CMD [ "/bin/bash" ]

@@ -2,19 +2,19 @@ SHELL = bash
 
 VARIANT := userdebug
 
-TARGETS :=     \
-    pinephonepro\
+TARGETS_STANDARD += \
+    pinephonepro    \
+    opi4            \
+    rpi4            \
+
+TARGETS_SLOWGPU :=  \
+    opi3       \
     pinephone  \
     pinetab    \
-    opi3       \
-    opi4       \
-    rpi4       \
     opi_win    \
     opi_pc2    \
     opi_prime  \
     opi_pc     \
-
-TARGETS +=     \
     opi_plus2  \
     opi_plus2e \
 
@@ -52,6 +52,21 @@ $(AOSP_PATH)/out_images/gd-$$(VER)-$1-$2.tar.gz: $(AOSP_PATH)/out_images/gd-$$(V
 
 endef
 
+TARGETS := $(TARGETS_STANDARD) $(TARGETS_SLOWGPU)
 $(foreach target,$(TARGETS),$(eval $(call process-target,$(target),$(VARIANT))))
 
-build_all: $(foreach target,$(TARGETS),$(AOSP_PATH)/out_images/gd-$(VER)-$(target)-$(VARIANT).tar.gz ) ## Build all GloDroid targets, put images into <AOSP tree>/out_images/...
+build_standard: $(foreach target,$(TARGETS_STANDARD),$(AOSP_PATH)/out_images/gd-$(VER)-$(target)-$(VARIANT).tar.gz ) ## Build all standard GloDroid targets, put images into <AOSP tree>/out_images/...
+
+build_slowgpu: $(foreach target,$(TARGETS_SLOWGPU),$(AOSP_PATH)/out_images/gd-$(VER)-$(target)-$(VARIANT).tar.gz ) ## Build all slow-gpu GloDroid targets, put images into <AOSP tree>/out_images/...
+
+patch_slowgpu: ## Patch the framework to reduce load on slow GPU
+	cd $(AOSP_PATH)/frameworks/base
+	git fetch https://android.googlesource.com/platform/frameworks/base refs/changes/33/2121633/1 && git cherry-pick FETCH_HEAD --allow-empty --keep-redundant-commits
+	git fetch https://android.googlesource.com/platform/frameworks/base refs/changes/52/2123752/1 && git cherry-pick FETCH_HEAD --allow-empty --keep-redundant-commits
+	cd $(AOSP_PATH)/frameworks/native
+	git fetch https://android.googlesource.com/platform/frameworks/native refs/changes/73/2123073/1 && git cherry-pick FETCH_HEAD --allow-empty --keep-redundant-commits
+
+unpatch_slowgpu: ## Restore the framework code after the patching
+	cd $(AOSP_PATH)
+	repo sync -l frameworks/base
+	repo sync -l frameworks/native

@@ -37,4 +37,7 @@ build_all: ## Build all targets within a container (for CI purposes)
 	make clean
 	make build
 	make run `cd ../../.. && pwd`
-	$(docker_bin) exec -it $(image_name) bash -c "cd .repo/manifests/.ci && make build_all"
+	$(docker_bin) exec -it $(image_name) bash -c "cd .repo/manifests/.ci && make unpatch_slowgpu"
+	$(docker_bin) exec -it $(image_name) bash -c "cd .repo/manifests/.ci && make build_standard"
+	$(docker_bin) exec -it $(image_name) bash -c "cd .repo/manifests/.ci && make patch_slowgpu"
+	$(docker_bin) exec -it $(image_name) bash -c "cd .repo/manifests/.ci && make build_slowgpu"
