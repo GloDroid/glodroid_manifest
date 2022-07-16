@@ -18,6 +18,7 @@
 
   <project path="external/libcamera"       remote="glodroid" name="glodroid_forks.git" revision="refs/tags/libcamera-v0.7.4" />
   <project path="external/boost"           remote="glodroid" name="glodroid_forks.git" revision="refs/tags/boost-v0.7.0" />
+  <project path="external/libyaml"         remote="glodroid" name="glodroid_forks.git" revision="refs/tags/libyaml-v0.7.0" />
   <project path="external/libyuv_chromium" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/libyuv_chromium-v0.7.0" />
 
   <project path="external/iio-sensors-hal" remote="glodroid" name="glodroid_forks.git" revision="refs/tags/iio-sensors-hal-v0.7.4" />
