@@ -2,7 +2,7 @@
 
 Free and opensource AOSP based Android for the world's most accessible development platforms.  
 
-This version is based on Android master branch as of 20 Apr 2022
+This version is based on [Android 13.0.0 Release 3](https://android.googlesource.com/platform/manifest/+/refs/heads/android-13.0.0_r3).
 
 ## Supported devices:
 ### Rockchip platform:
