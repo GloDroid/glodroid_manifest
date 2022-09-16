@@ -6,7 +6,7 @@ This version is based on [Android 13.0.0 Release 3](https://android.googlesource
 
 ## Supported devices:
 ### Rockchip platform:
-- PinephonePro
+- PinephonePro (U-Boot only, Tow-Boot unsupported)
 ### SUNXI platform:
 - Orange PI Plus 2E (temporary unsupported)
 - Orange PI PC (temporary unsupported)
