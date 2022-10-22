@@ -6,9 +6,9 @@ TARGETS_STANDARD += \
     pinephonepro    \
     opi4            \
     rpi4            \
+    opi3            \
 
 TARGETS_SLOWGPU :=  \
-    opi3       \
     pinephone  \
     pinetab    \
     opi_win    \
