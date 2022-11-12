@@ -17,7 +17,6 @@
   <project path="prebuilts/applications" remote="glodroid" name="glodroid_external_apks.git" groups="glodroid" revision="refs/tags/apps-v0.7.1" />
 
   <project path="external/libcamera"       remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/libcamera-v0.7.4" />
-  <project path="external/boost"           remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/boost-v0.7.0" />
   <project path="external/libyaml"         remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/libyaml-v0.7.0" />
   <project path="external/libyuv_chromium" remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/libyuv_chromium-v0.7.0" />
 
