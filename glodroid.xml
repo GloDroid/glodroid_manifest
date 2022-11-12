@@ -6,32 +6,42 @@
   <remote  name="glodroid" fetch="https://github.com/glodroid/" />
   <remote  name="megous"   fetch="https://megous.com/git/" />
 
-  <remove-project                               name="platform/external/arm-trusted-firmware" />
-  <project path="external/arm-trusted-firmware" name="platform/external/arm-trusted-firmware" groups="glodroid" revision="a127b99d5a063c798d1c6d2e1d4791a630f78355" />
-
+  <remove-project name="platform/external/arm-trusted-firmware" />
   <remove-project name="platform/external/minigbm" />
   <remove-project name="platform/external/mesa3d" />
   <remove-project name="platform/external/drm_hwcomposer" />
 
-  <project path="device/glodroid"        remote="glodroid" name="glodroid_device.git"        groups="glodroid" revision="refs/tags/v0.8.1" />
-  <project path="prebuilts/applications" remote="glodroid" name="glodroid_external_apks.git" groups="glodroid" revision="refs/tags/apps-v0.7.1" />
+  <project path="device/glodroid"                 remote="glodroid" name="glodroid_device.git"        groups="glodroid" revision="refs/tags/v0.8.1" />
 
-  <project path="external/libcamera"       remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/libcamera-v0.7.4" />
-  <project path="external/libyaml"         remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/libyaml-v0.7.0" />
-  <project path="external/libyuv_chromium" remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/libyuv_chromium-v0.7.0" />
+  <project path="glodroid/apks"                   remote="glodroid" name="glodroid_external_apks.git" groups="glodroid" revision="refs/tags/apps-v0.7.1" />
 
-  <project path="external/iio-sensors-hal" remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/iio-sensors-hal-v0.7.4" />
-  <project path="external/minigbm"         remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/minigbm-v0.8.1" />
-  <project path="external/drm_hwcomposer"  remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/drm_hwcomposer-v0.8.0" />
-  <project path="external/mesa3d"          remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/mesa3d-v0.8.1" />
-  <project path="external/u-boot"          remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/uboot-v0.7.5" />
-  <project path="external/tinyhal"         remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/tinyhal-v0.8.1" />
-  <project path="kernel/glodroid-megous"   remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/kernel-megous-v0.8.1" />
-  <project path="kernel/glodroid-megous-edge"   remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/kernel-megous-edge-v0.8.1" />
-  <project path="kernel/glodroid-broadcom" remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/kernel-broadcom-v0.8.1" />
-  <project path="kernel/glodroid-stable"   remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/kernel-stable-v0.8.1" />
-  <project path="kernel/glodroid-modules/rtl8189es" remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/rtl8189es-v0.8.1" />
-  <project path="kernel/glodroid-modules/rtl8189fs" remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/rtl8189fs-v0.8.1" />
+  <project path="glodroid/vendor/libcamera"       remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/libcamera-v0.7.4" />
+  <project path="glodroid/vendor/libyaml"         remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/libyaml-v0.7.0" />
+  <project path="glodroid/vendor/libyuv_chromium" remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/libyuv_chromium-v0.7.0" />
+
+  <project path="glodroid/vendor/iio-sensors-hal" remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/iio-sensors-hal-v0.7.4" />
+  <project path="glodroid/vendor/minigbm"         remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/minigbm-v0.8.1" />
+  <project path="glodroid/vendor/drm_hwcomposer"  remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/drm_hwcomposer-v0.8.0" />
+  <project path="glodroid/vendor/mesa3d"          remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/mesa3d-v0.8.1" />
+  <project path="glodroid/vendor/tinyhal"         remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/tinyhal-v0.8.1" />
+
+  <project path="glodroid/bootloader/u-boot"        remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/uboot-v0.7.5" />
+  <project path="glodroid/bootloader/atf"           name="platform/external/arm-trusted-firmware" groups="glodroid" revision="a127b99d5a063c798d1c6d2e1d4791a630f78355" />
+  <project path="glodroid/bootloader/crust-atf"     remote="github" name="crust-firmware/arm-trusted-firmware.git"    groups="glodroid" revision="refs/tags/crust-20220611" />
+  <project path="glodroid/bootloader/crust-firmware" remote="github" name="crust-firmware/crust.git"         groups="glodroid" revision="refs/tags/v0.5" />
+  <project path="glodroid/bootloader/amlogic-boot-fip" remote="github" name="LibreELEC/amlogic-boot-fip.git" groups="glodroid" revision="6041db8dfd3d8f815a338d78480e9b32c6abc7d4" clone-depth="1" />
+  <project path="glodroid/bootloader/rockchip-rkbin" remote="github"  name="rockchip-linux/rkbin.git" groups="glodroid" revision="7d631e0d5b2d373b54d4533580d08fb9bd2eaad4" clone-depth="1" />
+  <project path="glodroid/bootloader/raspberry-fw"  remote="github"  name="raspberrypi/firmware.git" groups="glodroid" revision="61744dcbdce6d3777771d05edaaf942389f19e8d" clone-depth="1" />
+
+  <project path="glodroid/kernel/megous"            remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/kernel-megous-v0.8.1" />
+  <project path="glodroid/kernel/megous-edge"       remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/kernel-megous-edge-v0.8.1" />
+  <project path="glodroid/kernel/broadcom"          remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/kernel-broadcom-v0.8.1" />
+  <project path="glodroid/kernel/stable"            remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/kernel-stable-v0.8.1" />
+  <project path="glodroid/kernel-modules/rtl8189es" remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/rtl8189es-v0.8.1" />
+  <project path="glodroid/kernel-modules/rtl8189fs" remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/rtl8189fs-v0.8.1" />
+  <project path="glodroid/kernel-firmware/megous"   remote="megous"   name="linux-firmware"     groups="glodroid" revision="6e8e591e17e207644dfe747e51026967bb1edab5" clone-depth="1" />
+  <project path="glodroid/kernel-firmware/armbian"  remote="github"   name="armbian/firmware.git" groups="glodroid" revision="4df7fecf02b2940150277a3daa40078e49fbd88c" clone-depth="1" />
+  <project path="glodroid/kernel-firmware/rpi"      remote="github" name="RPi-Distro/firmware-nonfree.git" groups="glodroid" revision="54ffdd6e2ea6055d46656b78e148fe7def3ec9d8" clone-depth="1" />
 
   <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro-arm-linux-gnueabihf"
                                            remote="glodroid" name="linaro_gcc_prebuilts.git" groups="glodroid" revision="refs/tags/gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabihf" />
@@ -41,15 +51,5 @@
                                            remote="glodroid" name="linaro_gcc_prebuilts.git" groups="glodroid" revision="refs/tags/gcc-linaro-7.5.0-2019.12-x86_64_arm-eabi" />
   <project path="prebuilts/gcc/linux-x86/or1k/gcc-linux-or1k"
                                            remote="glodroid" name="linaro_gcc_prebuilts.git" groups="glodroid" revision="refs/tags/openrisc--musl--stable-2020.08-1" />
-
-  <project path="external/crust-firmware/arm-trusted-firmware" remote="github" name="crust-firmware/arm-trusted-firmware.git"    groups="glodroid" revision="refs/tags/crust-20220611" />
-  <project path="external/crust-firmware/crust"                remote="github" name="crust-firmware/crust.git"                   groups="glodroid" revision="refs/tags/v0.5" />
-
-  <project path="kernel/firmware"         remote="github" name="armbian/firmware.git"       groups="glodroid" revision="4df7fecf02b2940150277a3daa40078e49fbd88c" clone-depth="1" />
-  <project path="vendor/raspberry/firmware" remote="github" name="raspberrypi/firmware.git" groups="glodroid" revision="61744dcbdce6d3777771d05edaaf942389f19e8d" clone-depth="1" />
-  <project path="vendor/raspberry/firmware-nonfree" remote="github" name="RPi-Distro/firmware-nonfree.git" groups="glodroid" revision="54ffdd6e2ea6055d46656b78e148fe7def3ec9d8" clone-depth="1" />
-  <project path="vendor/megous/firmware"  remote="megous"           name="linux-firmware"   groups="glodroid" revision="6e8e591e17e207644dfe747e51026967bb1edab5" clone-depth="1" />
-  <project path="vendor/amlogic/amlogic-boot-fip" remote="github" name="LibreELEC/amlogic-boot-fip.git" groups="glodroid" revision="6041db8dfd3d8f815a338d78480e9b32c6abc7d4" clone-depth="1" />
-  <project path="vendor/rockchip/rkbin" remote="github" name="rockchip-linux/rkbin.git" groups="glodroid" revision="7d631e0d5b2d373b54d4533580d08fb9bd2eaad4" clone-depth="1" />
 
 </manifest>
