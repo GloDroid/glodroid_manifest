@@ -6,6 +6,10 @@
   <remote  name="glodroid" fetch="https://github.com/glodroid/" />
   <remote  name="megous"   fetch="https://megous.com/git/" />
 
+  <!--libcxx hasn't been updated for too long and has a BUG: https://bugs.llvm.org/show_bug.cgi?id=41130 , use a temporary fork for now-->
+  <remove-project name="platform/external/libcxx" />
+  <project path="external/libcxx" remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/libcxx-v0.8.2" />
+
   <remove-project name="platform/external/arm-trusted-firmware" />
   <remove-project name="platform/external/minigbm" />
   <remove-project name="platform/external/mesa3d" />
