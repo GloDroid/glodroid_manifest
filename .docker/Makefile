@@ -1,15 +1,17 @@
 #!/usr/bin/make
 
-docker_bin := $(shell command -v docker 2> /dev/null)
-image_name := dummy
-local_android_root := $(word 2, $(MAKECMDGOALS))
+DOCKERFILE := Dockerfile
+DOCKER_BIN := $(shell command -v docker 2> /dev/null)
+IMAGE_NAME := glodroid_ci
+LOCAL_AOSP_ROOT := $(word 2, $(MAKECMDGOALS))
+LOCAL_AOSP_ROOT := $(if $(LOCAL_AOSP_ROOT) $(LOCAL_AOSP_ROOT)8,$(shell cd ../../.. && pwd))
 
-# Please run the following command prior to using this makefile
-# sudo apt install docker.io
-# sudo usermod -aG docker $USER
-# reboot
-ifeq ($(docker_bin),)
-$(error please install docker)
+ifeq ($(DOCKER_BIN),)
+$(warning Please install docker, e.g. for Ubuntu:)
+$(warning $$ sudo apt install docker.io)
+$(warning $$ sudo usermod -aG docker $$USER)
+$(warning and reboot your PC)
+$(error Aborting...)
 endif
 
 .PHONY : build clean help run stop shell
@@ -18,26 +20,25 @@ endif
 help: ## Show this help
 	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z_-]+:.*?## / {printf "  \033[36m%-15s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
-build: ## Build Docker image Usage: $ make build
-	$(docker_bin) build -t local/build-env -f ./Dockerfile .;
+PREPARE:= /tmp/$(USER)/prepare_docker_$(IMAGE_NAME).timestamp
+$(PREPARE): $(DOCKERFILE)
+	mkdir -p $(dir $@)
+	$(DOCKER_BIN) build -t local/build-env -f $(DOCKERFILE) .;
+	$(DOCKER_BIN) stop $(IMAGE_NAME) || true
+	$(DOCKER_BIN) rm $(IMAGE_NAME) || true
+	$(DOCKER_BIN) run -itd --name $(IMAGE_NAME) --network="host" -v $(LOCAL_AOSP_ROOT):/home/user/aosp local/build-env
+	@touch $@
 
-run: ## Start container. In other case you need to run command manually! Usage: $ make run "local_android_root"
-	$(docker_bin) run -itd --name $(image_name) --network="host" -v $(local_android_root):/home/user/aosp local/build-env
+prepare: $(PREPARE)
+prepare: ## Build and run Docker image
 
-stop: ## Stop and remove container. Usage: $ make stop
-	$(docker_bin) ps -a | awk -F "\t" '{ print $$1,$$7 }' | grep "$(image_name)" | awk '{print $$1 }' | xargs -I {} $(docker_bin) stop {}
+shell: $(PREPARE)
+shell: ## Start shell inside the container
+	$(DOCKER_BIN) exec -it $(IMAGE_NAME) bash
 
-shell: ## Start shell into dummy container. Usage: $ make shell
-	$(docker_bin) exec -it $(image_name) bash
-
-clean: ## Remove images from local registry. Usage: $ make clean
-	$(docker_bin) ps -a | awk -F "\t" '{ print $$1,$$7 }' | grep "$(image_name)" | awk '{print $$1 }' | xargs -I {} $(docker_bin) rm -f {} ; \
-
+build_all: $(PREPARE)
 build_all: ## Build all targets within a container (for CI purposes)
-	make clean
-	make build
-	make run `cd ../../.. && pwd`
-	$(docker_bin) exec -it $(image_name) bash -c "cd .repo/manifests/.ci && make unpatch_slowgpu"
-	$(docker_bin) exec -it $(image_name) bash -c "cd .repo/manifests/.ci && make build_standard"
-	$(docker_bin) exec -it $(image_name) bash -c "cd .repo/manifests/.ci && make patch_slowgpu"
-	$(docker_bin) exec -it $(image_name) bash -c "cd .repo/manifests/.ci && make build_slowgpu"
+	$(DOCKER_BIN) exec -it $(IMAGE_NAME) bash -c "cd .repo/manifests/.ci && make unpatch_slowgpu"
+	$(DOCKER_BIN) exec -it $(IMAGE_NAME) bash -c "cd .repo/manifests/.ci && make build_standard"
+	$(DOCKER_BIN) exec -it $(IMAGE_NAME) bash -c "cd .repo/manifests/.ci && make patch_slowgpu"
+	$(DOCKER_BIN) exec -it $(IMAGE_NAME) bash -c "cd .repo/manifests/.ci && make build_slowgpu"
