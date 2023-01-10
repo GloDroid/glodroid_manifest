@@ -14,8 +14,8 @@ RUN apt-get update && apt-get upgrade -y && \
     x11proto-core-dev libx11-dev lib32z1-dev libgl1-mesa-dev \
     libxml2-utils xsltproc unzip fontconfig \
     # Install additional packages
-    swig libssl-dev flex bison device-tree-compiler mtools git \
-    gettext libncurses5 libgmp-dev libmpc-dev cpio rsync dosfstools kmod gdisk wget lz4 \
+    swig libssl-dev flex bison device-tree-compiler mtools gettext libncurses5 libgmp-dev \
+    libmpc-dev cpio rsync dosfstools kmod gdisk wget lz4 git meson cmake libglib2.0-dev \
     # Install additional packages (for building mesa3d, libcamera and other meson-based components)
     python3-pip pkg-config python3-dev ninja-build \
     # Install additional packages (required by repo utility)
@@ -24,7 +24,7 @@ RUN apt-get update && apt-get upgrade -y && \
     sudo && \
     apt-get clean && rm -rf /var/lib/apt/lists/* && \
     # Install additional packages (for building mesa3d, libcamera and other meson-based components)
-    pip3 install mako meson jinja2 ply pyyaml
+    pip3 install mako jinja2 ply pyyaml
 
 ENV RUN_USER user
 ENV RUN_UID 1000
