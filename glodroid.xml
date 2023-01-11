@@ -5,6 +5,9 @@
   <remote  name="gitlab"   fetch="https://gitlab.freedesktop.org/" />
   <remote  name="glodroid" fetch="https://github.com/glodroid/" />
   <remote  name="megous"   fetch="https://megous.com/git/" />
+  <remote  name="gnome"    fetch="https://github.com/GNOME/" />
+  <remote  name="mbroadband" fetch="https://gitlab.freedesktop.org/mobile-broadband" />
+  <remote  name="dbus"       fetch="https://gitlab.freedesktop.org/dbus" />
   <remote  name="libcamera"  fetch="https://git.libcamera.org/libcamera" />
 
   <!--libcxx hasn't been updated for too long and has a BUG: https://bugs.llvm.org/show_bug.cgi?id=41130 , use a temporary fork for now-->
@@ -28,10 +31,21 @@
   <project path="glodroid/vendor/libcamera/subprojects/libyuv"  remote="glodroid"  name="glodroid_forks.git" groups="glodroid" revision="refs/tags/libyuv-v0.8.2" />
   <project path="glodroid/vendor/libcamera/subprojects/libyaml" remote="github"    name="yaml/libyaml.git"   groups="glodroid" revision="refs/tags/0.2.5" />
 
+  <!-- modem components (vendor) -->
+  <project path="glodroid/vendor/mm-radio"        remote="glodroid"    name="mm-radio.git"     groups="glodroid" revision="c8c4e261bdbd37fee0d3ac8d0c4846a60715faf6" />
+  <project path="glodroid/vendor/dbus"            remote="dbus"        name="dbus.git"         groups="glodroid" revision="refs/tags/dbus-1.15.2" />
+  <project path="glodroid/vendor/libqmi"          remote="mbroadband"  name="libqmi.git"       groups="glodroid" revision="refs/tags/1.33.2" />
+  <project path="glodroid/vendor/modem_manager"   remote="mbroadband"  name="ModemManager.git" groups="glodroid" revision="aa28fc7a9ea67df99229a4d72ff2294d5bbbe456" />
+  <project path="glodroid/vendor/libgudev"        remote="gnome"       name="libgudev.git"     groups="glodroid" revision="refs/tags/237" />
+  <project path="glodroid/vendor/glib"            remote="gnome"       name="glib.git"         groups="glodroid" revision="5218765de210fe3f873af2d12bb605cf235031c5" />
+  <project path="glodroid/vendor/glib/subprojects/gvdb" remote="gnome" name="gvdb.git"         groups="glodroid" revision="0854af0fdb6d527a8d1999835ac2c5059976c210" />
+  <project path="glodroid/vendor/glib/subprojects/proxy-libintl" remote="github"  name="frida/proxy-libintl.git" groups="glodroid" revision="refs/tags/0.4" />
+
   <!-- other components (vendor) -->
   <project path="glodroid/vendor/aospext"         remote="glodroid" name="aospext.git"        groups="glodroid" revision="13cfa243ae2bfec55bc9a6c4c6021b4282b2cc11" />
   <project path="glodroid/vendor/iio-sensors-hal" remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/iio-sensors-hal-v0.7.4" />
   <project path="glodroid/vendor/tinyhal"         remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/tinyhal-v0.8.1" />
+  <project path="glodroid/vendor/libudev-zero"    remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/libudev_zero-v0.8.2" />
 
   <!-- bootloader components (platform) -->
   <project path="glodroid/bootloader/u-boot"        remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/uboot-v0.7.5" />
