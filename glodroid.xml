@@ -5,13 +5,12 @@
   <remote  name="gitlab"   fetch="https://gitlab.freedesktop.org/" />
   <remote  name="glodroid" fetch="https://github.com/glodroid/" />
   <remote  name="megous"   fetch="https://megous.com/git/" />
+  <remote  name="libcamera"  fetch="https://git.libcamera.org/libcamera" />
 
   <!--libcxx hasn't been updated for too long and has a BUG: https://bugs.llvm.org/show_bug.cgi?id=41130 , use a temporary fork for now-->
   <remove-project name="platform/external/libcxx" />
   <project path="external/libcxx" remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/libcxx-v0.8.2" />
 
-  <remove-project name="platform/external/arm-trusted-firmware" />
-  <remove-project name="platform/external/minigbm" />
   <remove-project name="platform/external/mesa3d" />
   <remove-project name="platform/external/drm_hwcomposer" />
 
@@ -20,14 +19,14 @@
   <project path="glodroid/apks"                   remote="glodroid" name="glodroid_external_apks.git" groups="glodroid" revision="refs/tags/apps-v0.7.1" />
 
   <!-- gpu+display components (vendor) -->
-  <project path="glodroid/vendor/minigbm"         remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/minigbm-v0.8.1" />
-  <project path="glodroid/vendor/drm_hwcomposer"  remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/drm_hwcomposer-v0.8.0" />
-  <project path="glodroid/vendor/mesa3d"          remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/mesa3d-v0.8.1" />
+  <project path="glodroid/vendor/minigbm"         remote="aosp" name="platform/external/minigbm"        groups="glodroid" revision="dd9c86425b040a6f0795e4a27f788985d34ece66" />
+  <project path="glodroid/vendor/drm_hwcomposer"  remote="aosp" name="platform/external/drm_hwcomposer" groups="glodroid" revision="2bf68c374976d0a7a0e71c1843cbeae2a3210b74" />
+  <project path="glodroid/vendor/mesa3d"          remote="aosp" name="platform/external/mesa3d"         groups="glodroid" revision="66b438dca11f79a8e54e558a97dc2d10c6b185d2" />
 
   <!-- camera components (vendor) -->
-  <project path="glodroid/vendor/libcamera"       remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/libcamera-v0.7.4" />
-  <project path="glodroid/vendor/libyaml"         remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/libyaml-v0.7.0" />
-  <project path="glodroid/vendor/libyuv_chromium" remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/libyuv_chromium-v0.7.0" />
+  <project path="glodroid/vendor/libcamera"                     remote="libcamera" name="libcamera.git"      groups="glodroid" revision="ea8ae5afff226f9373c82c1a3185e532d5d6eda0" />
+  <project path="glodroid/vendor/libcamera/subprojects/libyuv"  remote="glodroid"  name="glodroid_forks.git" groups="glodroid" revision="refs/tags/libyuv-v0.8.2" />
+  <project path="glodroid/vendor/libcamera/subprojects/libyaml" remote="github"    name="yaml/libyaml.git"   groups="glodroid" revision="refs/tags/0.2.5" />
 
   <!-- other components (vendor) -->
   <project path="glodroid/vendor/aospext"         remote="glodroid" name="aospext.git"        groups="glodroid" revision="13cfa243ae2bfec55bc9a6c4c6021b4282b2cc11" />
