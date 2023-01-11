@@ -34,7 +34,7 @@ repo sync -cq
 ```
 
 ## You should install additional packages in order to build GloDroid
-(Ubuntu 20.04 LTS is only supported. Building on other distributions can be done using docker)
+(Ubuntu 22.04 LTS is only supported. Building on other distributions can be done using docker)
 <br/>
 
 - [Install AOSP required packages](https://source.android.com/setup/build/initializing).
