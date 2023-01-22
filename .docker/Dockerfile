@@ -29,9 +29,11 @@ RUN apt-get update && apt-get upgrade -y && \
 ENV RUN_USER user
 ENV RUN_UID 1000
 
-ENV USER_HOME /home/${RUN_USER}
+ENV HOME /home/${RUN_USER}
+ARG MOUNT_DIR
+ENV MOUNT_DIR ${MOUNT_DIR}
 
-RUN mkdir -pv ${USER_HOME}
+RUN mkdir -pv ${HOME}
 # Create new user
 RUN adduser \
     --gecos 'Build User' \
@@ -42,10 +44,10 @@ RUN adduser \
     && adduser ${RUN_USER} sudo
 
 # Create project path
-RUN mkdir -pv ${USER_HOME}/aosp
-WORKDIR ${USER_HOME}/aosp
+RUN mkdir -pv ${MOUNT_DIR}
+WORKDIR ${MOUNT_DIR}
 
-RUN chown -R ${RUN_USER}:${RUN_USER} ${USER_HOME} && chmod -R 775 ${USER_HOME}
+RUN chown -R ${RUN_USER}:${RUN_USER} ${HOME} && chmod -R 775 ${HOME}
 
 # Ensure sudo group users are not
 # asked for a password when using
@@ -57,7 +59,7 @@ RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> \
 USER ${RUN_USER}
 
 # Install repo
-RUN wget -P ${USER_HOME}/bin http://commondatastorage.googleapis.com/git-repo-downloads/repo && chmod a+x ${USER_HOME}/bin/repo
+RUN wget -P ${HOME}/bin http://commondatastorage.googleapis.com/git-repo-downloads/repo && chmod a+x ${HOME}/bin/repo
 
 RUN git config --global user.name "FIRST_NAME LAST_NAME" && git config --global user.email "MY_NAME@example.com"
 

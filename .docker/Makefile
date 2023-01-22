@@ -4,7 +4,9 @@ DOCKERFILE := Dockerfile
 DOCKER_BIN := $(shell command -v docker 2> /dev/null)
 IMAGE_NAME := glodroid_ci
 LOCAL_AOSP_ROOT := $(word 2, $(MAKECMDGOALS))
-LOCAL_AOSP_ROOT := $(if $(LOCAL_AOSP_ROOT) $(LOCAL_AOSP_ROOT)8,$(shell cd ../../.. && pwd))
+LOCAL_AOSP_ROOT := $(if $(LOCAL_AOSP_ROOT) $(LOCAL_AOSP_ROOT),$(shell cd ../../.. && pwd))
+
+$(warning $(LOCAL_AOSP_ROOT))
 
 ifeq ($(DOCKER_BIN),)
 $(warning Please install docker, e.g. for Ubuntu:)
@@ -23,10 +25,10 @@ help: ## Show this help
 PREPARE:= /tmp/$(USER)/prepare_docker_$(IMAGE_NAME).timestamp
 $(PREPARE): $(DOCKERFILE)
 	mkdir -p $(dir $@)
-	$(DOCKER_BIN) build -t local/build-env -f $(DOCKERFILE) .;
+	$(DOCKER_BIN) build -t local/build-env --build-arg MOUNT_DIR=$(LOCAL_AOSP_ROOT) -f $(DOCKERFILE) .;
 	$(DOCKER_BIN) stop $(IMAGE_NAME) || true
 	$(DOCKER_BIN) rm $(IMAGE_NAME) || true
-	$(DOCKER_BIN) run -itd --name $(IMAGE_NAME) --network="host" -v $(LOCAL_AOSP_ROOT):/home/user/aosp local/build-env
+	$(DOCKER_BIN) run -itd --name $(IMAGE_NAME) --network="host" -v $(LOCAL_AOSP_ROOT):$(LOCAL_AOSP_ROOT) -u $$(id -u):$$(id -g) local/build-env
 	@touch $@
 
 prepare: $(PREPARE)
