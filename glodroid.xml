@@ -56,10 +56,9 @@
   <project path="glodroid/bootloader/raspberry-fw"  remote="github"  name="raspberrypi/firmware.git" groups="glodroid" revision="61744dcbdce6d3777771d05edaaf942389f19e8d" clone-depth="1" />
 
   <!-- kernel/firmware components (platform) -->
-  <project path="glodroid/kernel/megous"            remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/kernel-megous-v0.8.1" />
-  <project path="glodroid/kernel/megous-edge"       remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/kernel-megous-edge-v0.8.1" />
+  <project path="glodroid/kernel/common-android13-5.15-lts" remote="aosp" name="kernel/common"  groups="glodroid" revision="e66b45d52787954e4579fa32712ff2dbe64e3576" clone-depth="1" />
+  <project path="glodroid/kernel/common-android14-6.1"      remote="aosp" name="kernel/common"  groups="glodroid" revision="c747c018510514875d9d790dde177c52bba7b679" clone-depth="1" />
   <project path="glodroid/kernel/broadcom"          remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/kernel-broadcom-v0.8.1" />
-  <project path="glodroid/kernel/stable"            remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/kernel-stable-v0.8.1" />
   <project path="glodroid/kernel-modules/rtl8189es" remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/rtl8189es-v0.8.1" />
   <project path="glodroid/kernel-modules/rtl8189fs" remote="glodroid" name="glodroid_forks.git" groups="glodroid" revision="refs/tags/rtl8189fs-v0.8.1" />
   <project path="glodroid/kernel-firmware/megous"   remote="megous"   name="linux-firmware"     groups="glodroid" revision="6e8e591e17e207644dfe747e51026967bb1edab5" clone-depth="1" />
