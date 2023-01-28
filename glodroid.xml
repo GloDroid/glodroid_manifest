@@ -16,7 +16,7 @@
   <remove-project name="platform/external/mesa3d" />
   <remove-project name="platform/external/drm_hwcomposer" />
 
-  <project path="device/glodroid"                 remote="glodroid" name="glodroid_device.git"        groups="glodroid" revision="refs/tags/v0.8.2" />
+  <project path="glodroid/configuration"          remote="glodroid" name="glodroid_device.git"        groups="glodroid" revision="refs/tags/v0.8.2" />
 
   <project path="glodroid/apks"                   remote="glodroid" name="glodroid_external_apks.git" groups="glodroid" revision="refs/tags/apps-v0.8.2" />
 
