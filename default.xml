@@ -3,5 +3,6 @@
 
   <include name="aosp.xml" />
   <include name="glodroid.xml" />
+  <include name="glodroid-community-devices.xml" />
 
 </manifest>

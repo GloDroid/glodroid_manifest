@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="community" fetch="https://github.com/GloDroidCommunity/" />
+  <project path="vendor/devices-community/pine64_pinephone" remote="community" name="pine64-pinephone.git"    groups="gd-community" revision="refs/heads/main" />
+  <project path="vendor/devices-community/pine64_pinephonepro" remote="community" name="pine64-pinephonepro.git"    groups="gd-community" revision="refs/heads/main" />
+
+</manifest>
