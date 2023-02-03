@@ -34,12 +34,12 @@
   <project path="glodroid/vendor/libcamera/subprojects/libyaml" remote="github"    name="yaml/libyaml.git"   groups="glodroid" revision="refs/tags/0.2.5" />
 
   <!-- modem components (vendor) -->
-  <project path="glodroid/vendor/mm-radio"        remote="glodroid"    name="mm-radio.git"     groups="glodroid" revision="c8c4e261bdbd37fee0d3ac8d0c4846a60715faf6" />
+  <project path="glodroid/vendor/mm-radio"        remote="glodroid"    name="mm-radio.git"     groups="glodroid" revision="03377b52634b8a5a8e26cfbd9ad9ae7b8ac5262b" />
   <project path="glodroid/vendor/dbus"            remote="dbus"        name="dbus.git"         groups="glodroid" revision="refs/tags/dbus-1.15.2" />
-  <project path="glodroid/vendor/libqmi"          remote="mbroadband"  name="libqmi.git"       groups="glodroid" revision="refs/tags/1.33.2" />
-  <project path="glodroid/vendor/modem_manager"   remote="mbroadband"  name="ModemManager.git" groups="glodroid" revision="aa28fc7a9ea67df99229a4d72ff2294d5bbbe456" />
+  <project path="glodroid/vendor/libqmi"          remote="mbroadband"  name="libqmi.git"       groups="glodroid" revision="refs/tags/1.33.4-dev" />
+  <project path="glodroid/vendor/modem_manager"   remote="mbroadband"  name="ModemManager.git" groups="glodroid" revision="652a562aebcd22e16962ec57c0176acdbf41876a" />
   <project path="glodroid/vendor/libgudev"        remote="gnome"       name="libgudev.git"     groups="glodroid" revision="refs/tags/237" />
-  <project path="glodroid/vendor/glib"            remote="gnome"       name="glib.git"         groups="glodroid" revision="5218765de210fe3f873af2d12bb605cf235031c5" />
+  <project path="glodroid/vendor/glib"            remote="gnome"       name="glib.git"         groups="glodroid" revision="refs/tags/2.75.2" />
   <project path="glodroid/vendor/glib/subprojects/gvdb" remote="gnome" name="gvdb.git"         groups="glodroid" revision="0854af0fdb6d527a8d1999835ac2c5059976c210" />
   <project path="glodroid/vendor/glib/subprojects/proxy-libintl" remote="github"  name="frida/proxy-libintl.git" groups="glodroid" revision="refs/tags/0.4" />
 
