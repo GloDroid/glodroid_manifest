@@ -77,5 +77,7 @@
                                            remote="glodroid" name="linaro_gcc_prebuilts.git" groups="glodroid" revision="refs/tags/gcc-linaro-7.5.0-2019.12-x86_64_arm-eabi" />
   <project path="prebuilts/gcc/linux-x86/or1k/gcc-linux-or1k"
                                            remote="glodroid" name="linaro_gcc_prebuilts.git" groups="glodroid" revision="refs/tags/openrisc--musl--stable-2020.08-1" />
+  <project path="glodroid/compilers/rust/1.65.0"
+                                           remote="glodroid" name="linaro_gcc_prebuilts.git" groups="glodroid" revision="refs/tags/rust-v1.65.0-linux-x86" />
 
 </manifest>
