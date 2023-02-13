@@ -35,6 +35,7 @@
 
   <!-- modem components (vendor) -->
   <project path="glodroid/vendor/mm-radio"        remote="glodroid"    name="mm-radio.git"     groups="glodroid" revision="03377b52634b8a5a8e26cfbd9ad9ae7b8ac5262b" />
+  <project path="glodroid/vendor/mm-radio/vendor" remote="glodroid"    name="mm-radio.git"     groups="glodroid" revision="refs/tags/cargo-deps-2023w07" clone-depth="1" />
   <project path="glodroid/vendor/dbus"            remote="dbus"        name="dbus.git"         groups="glodroid" revision="refs/tags/dbus-1.15.2" />
   <project path="glodroid/vendor/libqmi"          remote="mbroadband"  name="libqmi.git"       groups="glodroid" revision="refs/tags/1.33.4-dev" />
   <project path="glodroid/vendor/modem_manager"   remote="mbroadband"  name="ModemManager.git" groups="glodroid" revision="652a562aebcd22e16962ec57c0176acdbf41876a" />
