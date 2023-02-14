@@ -2,7 +2,7 @@
 
 Free and opensource AOSP based Android for the world's most accessible development platforms.
 
-This version is based on [Android 13.0.0 Release 11](https://android.googlesource.com/platform/manifest/+/refs/heads/android-13.0.0_r11).
+This version is based on [Android 13.0.0 Release 31](https://android.googlesource.com/platform/manifest/+/refs/heads/android-13.0.0_r31).
 
 ## Supported devices:
 ### Rockchip platform:
