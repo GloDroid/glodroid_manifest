@@ -29,7 +29,7 @@ chmod a+x ~/bin/repo
 ```bash
 mkdir -p GloDroid
 cd GloDroid
-repo init -u https://github.com/glodroid/glodroid_manifest -g all,-darwin
+repo init -u https://github.com/glodroid/glodroid_manifest -b master -g all,-darwin
 repo sync -cq
 ```
 
